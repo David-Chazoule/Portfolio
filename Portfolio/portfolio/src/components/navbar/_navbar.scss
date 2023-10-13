@@ -1,0 +1,99 @@
+.navbar-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  .navbar_links {
+    display: flex;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: -100vh;
+      bottom: 0;
+      height: 100vh;
+      padding: 2rem;
+      visibility: hidden;
+      background-color: black;
+    }
+
+    .navbar_link {
+      padding: 0 0.3rem;
+      color: inherit;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+      }
+    }
+  }
+
+  .show-nav {
+    @media screen and (max-width: 767px) {
+      right: 0;
+      width: 100vw;
+      visibility: visible;
+    }
+  }
+
+  .navbar_burger {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .burger-bar,
+    .burger-bar::before,
+    .burger-bar::after {
+      @media screen and (max-width: 767px) {
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background-color: white;
+      }
+    }
+
+    .burger-bar::before,
+    .burger-bar::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+
+  .burger-bar::after {
+    transform: translateY(12px);
+  }
+
+  .burgerX .burger-bar::before {
+    transform: rotate(45deg);
+  }
+
+  .burgerX .burger-bar::after {
+    transform: (-45deg);
+  }
+}
