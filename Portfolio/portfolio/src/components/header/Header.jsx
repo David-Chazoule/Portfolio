@@ -6,6 +6,7 @@ export default function Header() {
     <div className="header-container">
       <span>LOGO</span>
       <Navbar />
+      <div></div>
     </div>
   );
 }

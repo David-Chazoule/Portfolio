@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { navbar } from "../../Data/data";
+import frFlag from "../../styles/img/franceFlag.png";
 
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -11,20 +13,22 @@ export default function Navbar() {
   console.log(showLinks);
 
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       <ul className={`navbar_links ${showLinks ? "show-nav" : ""}`}>
+        <img src={frFlag} alt="" />
+
         {navbar &&
           navbar.map((elem, key) => (
-            <li className="navbar_item" key={key}>
-              <a href="/" className="navbar_link">
+            <Link to={`/${elem.route}`}>
+              <li className="navbar_item" key={key}>
                 {elem.menuFr}
-              </a>
-            </li>
+              </li>
+            </Link>
           ))}
       </ul>
       <button className="navbar_burger " onClick={handleShowLinks}>
-        <span className="burger-bar"></span>
+        <span className={`burger-bar ${showLinks ? "burgerx" : ""}`}></span>
       </button>
-    </div>
+    </nav>
   );
 }
