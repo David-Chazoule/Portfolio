@@ -10,8 +10,6 @@ export default function Navbar() {
     setShowLinks(!showLinks);
   };
 
-  console.log(showLinks);
-
   return (
     <nav className="navbar-container">
       <ul className={`navbar_links ${showLinks ? "show-nav" : ""}`}>
