@@ -3,11 +3,15 @@ import React from "react";
 export default function ProjectCard({
   key,
   img,
-  description,
+  descriptionEn,
+  descriptionFr,
   github,
+  github2,
+  gitOk,
   liveOk,
   live,
   tags,
+  translate,
 }) {
   return (
     <div key={key} className="projectCard_container">
@@ -16,13 +20,20 @@ export default function ProjectCard({
 
         <div className="description-card">
           <div>
-            <p>{description}</p>
+            <p>{translate ? descriptionFr : descriptionEn}</p>
           </div>
 
           <div className="project-link">
             <button>
               <a href={github}>GitHub</a>
             </button>
+            {gitOk === true ? (
+              <button>
+                <a href={github2}>GitHub</a>
+              </button>
+            ) : (
+              ""
+            )}
             {liveOk === true ? (
               <button>
                 <a href={live}>Live</a>

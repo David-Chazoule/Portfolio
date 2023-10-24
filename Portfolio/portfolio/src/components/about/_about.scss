@@ -1,0 +1,32 @@
+.about_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1rem 1rem;
+
+  .about-box {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      display: flex;
+      width: 60%;
+
+      justify-content: center;
+      text-align: left;
+
+      p {
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
