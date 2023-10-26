@@ -27,7 +27,7 @@ export default function Navbar({ translate, setTranslate }) {
         {navbar &&
           navbar.map((elem, key) => (
             <Link to={`/${elem.route}`}>
-              <li className="navbar_item" key={key}>
+              <li className="navbar_item" key={key} onClick={handleShowLinks}>
                 {translate ? elem.menuFr : elem.menuEn}
               </li>
             </Link>
