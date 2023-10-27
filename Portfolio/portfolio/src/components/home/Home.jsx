@@ -1,13 +1,18 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import LinkedinLogo from "../../styles/img/LinkedinLogo.png";
 import github from "../../styles/img/github.png";
 import CV from "../../styles/img/CV.png";
 import devlogo from "../../styles/img/devlogo.png";
 
 export default function Home() {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <div className="home_container">
+    <div
+      className={
+        theme === "light" ? " home_container lights" : "home_container darks"
+      }
+    >
       <div className="presentation">
         <div className="presentation-txt">
           <h1>Salut! Je suis David </h1>

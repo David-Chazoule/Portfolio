@@ -1,0 +1,31 @@
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 75px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 1rem;
+  color: white;
+}
+.header-container .option-container {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-around;
+}
+.header-container .option-container .flag {
+  width: 32px;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #212529;
+}
+
+.light {
+  background-color: aqua;
+}/*# sourceMappingURL=header.css.map */

@@ -24,7 +24,7 @@ export const navbar = [
 
   {
     menuFr: "Contactez moi",
-    menuEn: "Contact",
+    menuEn: "Contact me",
     route: "Contact",
   },
 ];

@@ -6,13 +6,19 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import { useState } from "react";
+import { createContext, useState } from "react";
+
+export const ThemeContext = createContext("dark");
 
 function App() {
   const [translate, setTranslate] = useState(false);
+  
+
+  
   return (
     <div className="App">
-      <Header translate={translate} setTranslate={setTranslate} />
+      
+      <Header translate={translate} setTranslate={setTranslate}    />
 
       <Routes>
         <Route exact path="/" element={<Home translate={translate} />} />
@@ -21,6 +27,7 @@ function App() {
         <Route path="/Projects" element={<Projects translate={translate} />} />
         <Route path="/Contact" element={<Contact translate={translate} />} />
       </Routes>
+      
     </div>
   );
 }

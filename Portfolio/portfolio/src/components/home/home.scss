@@ -1,7 +1,10 @@
 .home_container {
+  display: flex;
+  width: 100%;
   min-height: 100vh;
   padding: 6rem 1rem 1rem;
   align-items: center;
+  justify-content: center;
   display: flex;
 
   .presentation {
@@ -9,11 +12,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 50vh;
 
     .presentation-txt {
       display: flex;
+      width: 100%;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -27,17 +31,18 @@
 
     .contact-box {
       display: flex;
-      align-items: center;
+      width: 100%;
       justify-content: center;
+      align-items: center;
       img {
-        width: 60px;
-        margin: 10px;
+        width: 80px;
+        margin: 0 20px 0 20px;
       }
     }
   }
 
   .img-dev-box {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,4 +52,13 @@
       width: 100%;
     }
   }
+}
+
+.darks {
+  background-color: black;
+  color: white;
+}
+
+.lights {
+  background-color: white;
 }
