@@ -1,17 +1,21 @@
-import React from "react";
+import React , { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import ProjectCard from "./ProjectCard";
 import { project, projectTitle } from "../../Data/data";
 
 export default function Projects({ translate }) {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <div className="project_container">
-      <p>{translate ? projectTitle.titleFr : projectTitle.titleEn}</p>
+    <div className={theme==='light'?"project_container roject_containerLight ":"project_container project_containerDark"}>
+      <h1>{translate ? projectTitle.titleFr : projectTitle.titleEn}</h1>
       <div className="project_card_box">
         {project &&
           project.map((elem, key) => (
             <ProjectCard
               key={key}
               img={elem.img}
+              titleFr={elem.titleFr}
+              titleEn={elem.titleEn}
               descriptionEn={elem.descriptionEn}
               descriptionFr={elem.descriptionFr}
               github={elem.githubLink}

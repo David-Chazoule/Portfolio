@@ -4,8 +4,12 @@
   width: 100%;
   height: fit-content;
   align-items: center;
-  justify-content: center;
   padding: 8rem 1rem 1rem;
+  min-height: 100vh;
+
+  h1 {
+    margin-bottom: 10vh;
+  }
 
   .about-box {
     display: flex;
@@ -14,18 +18,34 @@
     align-items: center;
     justify-content: center;
 
-    div {
+    .about-txt {
       display: flex;
-      width: 60%;
+      width: 80%;
+      min-height: 40vh;
 
-      justify-content: center;
-      text-align: left;
+      p {
+        margin: 0 10vh;
+        font-size: 20px;
+      }
+    }
 
-     
+    .about-picture {
+      display: flex;
+      width: 50%;
+      min-height: 40vh;
 
       img {
-        width: 70%;
+        width: 55%;
       }
     }
   }
+}
+
+.about_containerLight {
+  background-color: white;
+}
+
+.about_containerDark {
+  background-color: black;
+  color: white;
 }

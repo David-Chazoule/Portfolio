@@ -15,4 +15,14 @@
   margin: 20px 0;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.project_containerLight {
+  background-color: white;
+  color: black;
+}
+
+.project_containerDark {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=projects.css.map */

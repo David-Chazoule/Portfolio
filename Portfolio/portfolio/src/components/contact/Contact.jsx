@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import emailjs from "@emailjs/browser";
 import { contactData } from "../../Data/data";
 
-export default function Contact({translate}) {
+export default function Contact({ translate }) {
   const form = useRef();
+  const { theme } = useContext(ThemeContext);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,23 +25,56 @@ export default function Contact({translate}) {
           console.log(error.text);
         }
       );
-     e.target.reset();
-
+    e.target.reset();
   };
 
   return (
-    <div className="contact_container">
-      <h1>{ translate? contactData.titleFr : contactData.btnEn}</h1>
-      <div className="contact-card">
+    <div
+      className={
+        theme === "light"
+          ? "contact_container contact_containerLight "
+          : "contact_container contact_containerDark "
+      }
+    >
+      <h1>{translate ? contactData.titleFr : contactData.titleEn}</h1>
+      <div
+        className={
+          theme === "light"
+            ? "contact-card contact-cardLight"
+            : "contact-card contact-cardDark"
+        }
+      >
         <form ref={form} onSubmit={sendEmail}>
           <input
-            type="text" name='user_name'
-            placeholder={ translate ? contactData.placeholderNameFr : contactData.placeholderNameEn} required/>
+            type="text"
+            name="user_name"
+            placeholder={
+              translate
+                ? contactData.placeholderNameFr
+                : contactData.placeholderNameEn
+            }
+            required
+          />
           <input
-            type="email" name='user_email'
-            placeholder={translate ? contactData.placeholderEmailFr : contactData.placeholderEmailEn} required/>
-          <textarea name="message" placeholder={translate ?contactData.txtAreaFr : contactData.titleEn} required></textarea>
-          <button type="submit">{translate ? contactData.btnFr : contactData.btnEn}</button>
+            type="email"
+            name="user_email"
+            placeholder={
+              translate
+                ? contactData.placeholderEmailFr
+                : contactData.placeholderEmailEn
+            }
+            required
+          />
+          <textarea
+            name="message"
+            placeholder={
+              translate ? contactData.txtAreaFr : contactData.titleEn
+            }
+            required
+          ></textarea>
+          <button type="submit">
+            {translate ? contactData.btnFr : contactData.btnEn}
+          </button>
         </form>
       </div>
     </div>
