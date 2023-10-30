@@ -1,4 +1,4 @@
-import React , { useContext } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ProjectCard({
@@ -16,15 +16,21 @@ export default function ProjectCard({
   tags,
   translate,
 }) {
-
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
-    <div key={key} className={theme==='light'?`projectCard_container projectCardLight`:`projectCard_container projectCardDark`}>
+    <div
+      key={key}
+      className={
+        theme === "light"
+          ? `projectCard_container projectCardLight`
+          : `projectCard_container projectCardDark`
+      }
+    >
       <div className="card">
         <img src={img} alt="" />
 
         <div className="description-card">
-          <h3>{translate? titleFr :titleEn}</h3>
+          <h3>{translate ? titleFr : titleEn}</h3>
           <div>
             <p>{translate ? descriptionFr : descriptionEn}</p>
           </div>
@@ -50,7 +56,13 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <div className={theme==="light"?"footer-tagg footerLight-tagg":"footer-tagg footerDark-tagg"}>
+        <div
+          className={
+            theme === "light"
+              ? "footer-tagg footerLight-tagg"
+              : "footer-tagg footerDark-tagg"
+          }
+        >
           {tags && tags.map((elem, key) => <span key={key}>{elem}</span>)}
         </div>
       </div>

@@ -7,8 +7,12 @@
   border-radius: 10px;
   width: 32%;
   height: fit-content;
-  margin: 6px;
-  padding: 6px;
+  margin: 10px;
+
+  &:hover {
+    transform: scale(1.06);
+    transition: 2s;
+  }
 
   .card {
     display: flex;
@@ -61,16 +65,35 @@
         justify-content: center;
 
         button {
+          width: 140px;
+          height: 50px;
+          border: none;
+          outline: none;
+
+          background: #111;
           margin: 8px;
-          border-radius: 6px;
-          padding: 14px;
+
           background-color: black;
           color: white;
-          font-size: 16px;
+          font-size: 18px;
+          border-radius: 10px;
+          margin: 10px 14px;
+
+          padding: 14px;
+
+          &:hover {
+            transform: scale(1.1);
+            transition: 1s;
+            background-color: white;
+          }
 
           a {
             text-decoration: none;
             color: white;
+
+            &:hover {
+              color: black;
+            }
           }
         }
       }
@@ -91,6 +114,10 @@
 
         color: white;
         text-align: center;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -103,8 +130,9 @@
 
     .footerDark-tagg {
       border-top: 1px solid white;
+      background-color: transparent;
       span {
-        background-color: violet;
+        background-color: rgb(57, 16, 67);
       }
     }
   }
@@ -117,6 +145,5 @@
 
 .projectCardDark {
   background-color: $colorCardDark;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid rgb(61, 4, 55);
 }

@@ -24,6 +24,6 @@
 }
 
 .project_containerDark {
-  background-color: black;
+  @include backgroundDark;
   color: white;
 }

@@ -55,8 +55,9 @@
 }
 
 .darks {
-  background-color: black;
+  // background-color: black;
   color: white;
+  @include backgroundDark;
 }
 
 .lights {

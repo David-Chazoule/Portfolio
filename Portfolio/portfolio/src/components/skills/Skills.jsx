@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../buttonTest/Button'
+
 
 export default function Skills() {
   return (
-    <div><Button/></div>
+    <div className='skills_container'>Skills</div>
   )
 }

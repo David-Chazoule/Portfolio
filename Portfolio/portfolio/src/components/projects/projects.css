@@ -23,6 +23,7 @@
 }
 
 .project_containerDark {
-  background-color: black;
+  background: rgb(3, 3, 3);
+  background: linear-gradient(240deg, rgb(3, 3, 3) 18%, rgb(56, 24, 64) 37%);
   color: white;
 }/*# sourceMappingURL=projects.css.map */

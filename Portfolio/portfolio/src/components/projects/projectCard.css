@@ -57,8 +57,20 @@
   margin: 0;
   align-items: center;
   justify-content: center;
+  /*button */
+  /*end Button*/
 }
-.projectCard_container .card .description-card .project-link button {
+.projectCard_container .card .description-card .project-link .glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
   margin: 8px;
   border-radius: 6px;
   padding: 14px;
@@ -66,9 +78,56 @@
   color: white;
   font-size: 16px;
 }
-.projectCard_container .card .description-card .project-link button a {
+.projectCard_container .card .description-card .project-link .glow-on-hover a {
   text-decoration: none;
   color: white;
+}
+.projectCard_container .card .description-card .project-link .glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #3c345b, #3c345b, #430235, #3d365c, #453066, #9a047a, #512656, #4d1647, #690353);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.projectCard_container .card .description-card .project-link .glow-on-hover:active {
+  color: #000;
+}
+.projectCard_container .card .description-card .project-link .glow-on-hover:active:after {
+  background: transparent;
+}
+.projectCard_container .card .description-card .project-link .glow-on-hover:hover:before {
+  opacity: 1;
+}
+.projectCard_container .card .description-card .project-link .glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .projectCard_container .card .footer-tagg {
   width: 100%;
@@ -104,7 +163,8 @@
 }
 
 .projectCardDark {
-  background-color: #212529;
+  background: rgb(3, 3, 3);
+  background: linear-gradient(332deg, rgb(3, 3, 3) 18%, rgb(84, 37, 96) 37%);
   border: 1px solid white;
   color: white;
 }/*# sourceMappingURL=projectCard.css.map */

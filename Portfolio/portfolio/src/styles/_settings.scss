@@ -1,3 +1,9 @@
-$color-headerDark: #3c345b;
+$color-headerDark: #312b4b;
 
-$colorCardDark: #160045;
+$colorCardDark: #110231;
+
+
+@mixin backgroundDark {
+  background: rgb(3,3,3);
+  background: linear-gradient(240deg, rgba(3,3,3,1) 18%, rgb(35, 18, 39) 37%);
+}
