@@ -7,16 +7,16 @@
   justify-content: space-between;
   position: fixed;
   padding: 1rem;
-
   color: white;
+
   .option-container {
     display: flex;
     align-items: center;
     width: 120px;
     justify-content: space-around;
+    
     .flag {
       width: 32px;
-
       border: 1px solid white;
       border-radius: 6px;
       cursor: pointer;
@@ -25,9 +25,9 @@
 }
 
 .dark {
-  // background-color: #212529;
-  background-color: transparent;
+  background-color: $color-headerDark;
 }
 .light {
   background-color: aqua;
+  color: black;
 }

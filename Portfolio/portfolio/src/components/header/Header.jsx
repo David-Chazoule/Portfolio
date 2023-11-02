@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Navbar from "../navbar/Navbar";
-import frFlag from "../../styles/img/franceFlag.png";
-import FlagUK from "../../styles/img/FlagUK.png";
+import frFlag from "../header/img/franceFlag.png";
+import FlagUK from "../header/img/FlagUK.png";
 import { ThemeContext } from "../../context/ThemeContext";
 import ButtonTheme from "../ButtonTheme/ButtonTheme";
 

@@ -4,10 +4,12 @@ import { ThemeContext } from "../../context/ThemeContext";
 export default function ProjectCard({
   key,
   img,
+  imganimate,
   titleFr,
   titleEn,
   descriptionEn,
   descriptionFr,
+  githubOk,
   github,
   github2,
   gitOk,
@@ -17,6 +19,7 @@ export default function ProjectCard({
   translate,
 }) {
   const { theme } = useContext(ThemeContext);
+
   return (
     <div
       key={key}
@@ -27,7 +30,11 @@ export default function ProjectCard({
       }
     >
       <div className="card">
-        <img src={img} alt="" />
+        <img
+          src={process.env.PUBLIC_URL + `/img/${imganimate}.gif`}
+          title={img + ` image`}
+          alt={img}
+        />
 
         <div className="description-card">
           <h3>{translate ? titleFr : titleEn}</h3>
@@ -36,12 +43,17 @@ export default function ProjectCard({
           </div>
 
           <div className="project-link">
-            <button>
-              <a href={github}>GitHub</a>
-            </button>
+            {githubOk === true ? (
+              <button>
+                <a href={github}>GitHub</a>
+              </button>
+            ) : (
+              ""
+            )}
+
             {gitOk === true ? (
               <button>
-                <a href={github2}>GitHub</a>
+                <a href={github2}>GitHub back-end</a>
               </button>
             ) : (
               ""

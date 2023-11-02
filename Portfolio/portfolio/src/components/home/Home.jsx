@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { homeData } from "../../Data/data";
-import LinkedinLogo from "../../styles/img/LinkedinLogo.png";
-import LinkedinWhite from "../../styles/img/LinkedinWhite.png";
-import github from "../../styles/img/github.png";
-import githubWhite from "../../styles/img/githubWhite.png";
-import CV from "../../styles/img/CV.png";
-import cvwhite from "../../styles/img/cvWhite.png";
-import devlogo from "../../styles/img/devlogo.png";
+import LinkedinLogo from "./img/LinkedinLogo.png";
+import LinkedinWhite from "./img/LinkedinWhite.png";
+import github from "./img/github.png";
+import githubWhite from "./img/githubWhite.png";
+import CV from "./img/CV.png";
+import cvwhite from "./img/cvWhite.png";
+import devlogo from "./img/devlogo.png";
 
-export default function Home({translate}) {
+export default function Home({ translate }) {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div
@@ -19,9 +19,14 @@ export default function Home({translate}) {
     >
       <div className="presentation">
         <div className="presentation-txt">
-          <h1>{translate ? homeData.salutationFr: homeData.salutationEn}  <span>David</span> </h1>
+          <h1>
+            {translate ? homeData.salutationFr : homeData.salutationEn}{" "}
+            <span>David</span>{" "}
+          </h1>
 
-          <h2>{translate ? homeData.presentationFr: homeData.presentationEn}</h2>
+          <h2>
+            {translate ? homeData.presentationFr : homeData.presentationEn}
+          </h2>
         </div>
         <div className="contact-box">
           <a href="https://github.com/David-Chazoule">

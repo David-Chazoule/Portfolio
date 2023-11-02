@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { aboutData } from "../../Data/data";
-import profilePicture from "../../styles/img/profilePicture.jpg";
+import profilePicture from "../about/img/profilePicture.jpg";
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
@@ -14,8 +14,6 @@ export default function About() {
       }
     >
       <h1>{aboutData.titleFr}</h1>
-
-     
 
       <div className="about-box">
         <div className="about-txt">

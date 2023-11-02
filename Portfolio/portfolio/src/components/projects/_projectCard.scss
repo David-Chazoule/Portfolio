@@ -9,11 +9,6 @@
   height: fit-content;
   margin: 10px;
 
-  &:hover {
-    transform: scale(1.06);
-    transition: 2s;
-  }
-
   .card {
     display: flex;
     align-items: center;
@@ -24,7 +19,7 @@
     margin: 10px;
 
     img {
-      width: 100%;
+      width: 95%;
       height: 160px;
       margin: 0;
       border: 1px solid transparent;
@@ -35,7 +30,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-
       margin: 2px;
 
       h3 {
@@ -66,19 +60,17 @@
 
         button {
           width: 140px;
-          height: 50px;
+          height: 70px;
           border: none;
           outline: none;
-
           background: #111;
           margin: 8px;
-
           background-color: black;
           color: white;
-          font-size: 18px;
+          font-size: 16px;
           border-radius: 10px;
           margin: 10px 14px;
-
+          text-align: center;
           padding: 14px;
 
           &:hover {
@@ -111,7 +103,6 @@
         font-size: 14px;
         padding: 6px;
         border-radius: 20px;
-
         color: white;
         text-align: center;
 
@@ -144,6 +135,6 @@
 }
 
 .projectCardDark {
-  background-color: $colorCardDark;
+  background-color: $color-headerDark;
   border: 1px solid rgb(61, 4, 55);
 }
