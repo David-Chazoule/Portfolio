@@ -9,7 +9,7 @@ export default function Projects({ translate }) {
     <div
       className={
         theme === "light"
-          ? "project_container roject_containerLight "
+          ? "project_container project_containerLight "
           : "project_container project_containerDark"
       }
     >

@@ -6,7 +6,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import ButtonTheme from "../ButtonTheme/ButtonTheme";
 
 export default function Header({ translate, setTranslate }) {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const handleStranslate = () => {
     setTranslate(!translate);

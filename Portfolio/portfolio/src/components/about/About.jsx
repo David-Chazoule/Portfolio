@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { aboutData } from "../../Data/data";
 import profilePicture from "../about/img/profilePicture.jpg";
 
-export default function About() {
+export default function About({translate}) {
   const { theme } = useContext(ThemeContext);
   return (
     <div
@@ -13,7 +13,7 @@ export default function About() {
           : "about_container about_containerDark"
       }
     >
-      <h1>{aboutData.titleFr}</h1>
+      <h1>{translate? aboutData.titleFr: aboutData.titleEn}</h1>
 
       <div className="about-box">
         <div className="about-txt">

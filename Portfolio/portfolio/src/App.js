@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       
       <Header translate={translate} setTranslate={setTranslate}    />
+     
 
       <Routes>
         <Route exact path="/" element={<Home translate={translate} />} />

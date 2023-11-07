@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import sunDark from "./img/sunDark.png";
-import moonDark from "./img/MoonDark.png";
-import SunLight from "./img/sunLight.png";
 import moonLight from "./img/moonLight.png";
 
 export default function ButtonTheme({ translate }) {
@@ -10,14 +8,16 @@ export default function ButtonTheme({ translate }) {
 
   return (
     <div
-      className="button_container"
+      className={`button_container ${
+        theme === "light" ? "button_containerLight" : "button_containerDark"
+      }`}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       title={theme === "light" ? "light theme" : "dark theme"}
     >
       {theme === "light" ? (
-        <img className="logoBtn" src={SunLight} alt="" />
+        <img className="logoBtn " src={sunDark} alt="" />
       ) : (
-        <img className="logoBtn" src={moonLight} alt="" />
+        <img className="logoBtn " src={moonLight} alt="" />
       )}
     </div>
   );

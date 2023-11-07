@@ -2,14 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
-  border-radius: 6px;
-  padding: 2px;
-  width: 32px;
+  padding: 10px 5px;
+  width: 40px;
   height: 22px;
   cursor: pointer;
 
   .logoBtn {
-    width: 14px;
+    width: 20px;
+  }
+
+  .button_containerLight {
+    border: 1px solid black;
+  }
+
+  .button_containerDark {
+    border: 1px solid white;
   }
 }

@@ -37,6 +37,10 @@
       img {
         width: 80px;
         margin: 0 20px 0 20px;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
@@ -60,5 +64,6 @@
 }
 
 .lights {
-  background-color: white;
+  background-color: rgb(224, 224, 240);
+  color: black;
 }

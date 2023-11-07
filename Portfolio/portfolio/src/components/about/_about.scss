@@ -8,12 +8,14 @@
   min-height: 100vh;
 
   h1 {
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
   }
 
   .about-box {
     display: flex;
-    width: 80%;
+    width: 100%;
+    max-width: 1500px;
+    margin: 40px 0 0 0;
     height: fit-content;
     align-items: center;
     justify-content: center;
@@ -42,7 +44,7 @@
 }
 
 .about_containerLight {
-  background-color: white;
+  background-color: rgb(224, 224, 240);
 }
 
 .about_containerDark {

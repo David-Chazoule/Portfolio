@@ -7,11 +7,15 @@
   justify-content: center;
   padding: 8rem 1rem 1rem;
 
+  h1 {
+    margin-bottom: 5vh;
+  }
+
   .project_card_box {
     display: flex;
     width: 100%;
     max-width: 1500px;
-    margin: 20px 0;
+    margin: 40px 0;
     flex-wrap: wrap;
 
     justify-content: center;
@@ -19,7 +23,7 @@
 }
 
 .project_containerLight {
-  background-color: white;
+  background-color: rgb(224, 224, 240);
   color: black;
 }
 

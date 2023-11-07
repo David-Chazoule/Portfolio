@@ -23,16 +23,27 @@
       height: 100vh;
       padding: 2rem;
       visibility: hidden;
-      background-color: black;
       transition: all 0.6s ease-out;
     }
 
     .navbar_item {
       padding: 0 0.3rem;
-      color: white;
       width: 140px;
       font-size: 20px;
       text-align: center;
+
+      
+      background: linear-gradient(
+          to top,
+          rgba(255, 0, 0, 0.5) 0%,
+          rgba(255, 0, 0, 0.5) 2px
+        )
+        no-repeat left bottom / 0 100%;
+      transition: background-size 0.3s;
+
+      &:hover {
+        background-size: 100% 100%;
+      }
 
       @media screen and (max-width: 767px) {
         display: block;
@@ -40,13 +51,32 @@
         font-size: 5vw;
       }
     }
+
+    .navbar_itemLight {
+      color: black;
+    }
+
+    .navbar_itemDark {
+      color: white;
+    }
+  }
+
+  .navbar_linksLight {
+    @media screen and (max-width: 767px) {
+      background-color: rgb(188, 188, 218);
+    }
+  }
+
+  .navbar_linksDark {
+    @media screen and (max-width: 767px) {
+      background-color: black;
+    }
   }
 
   .show-nav {
     @media screen and (max-width: 767px) {
       right: 0;
-      width: 100vw;
-
+      width: 50vw;
       visibility: visible;
     }
   }

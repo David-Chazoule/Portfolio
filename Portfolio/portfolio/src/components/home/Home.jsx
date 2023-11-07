@@ -10,12 +10,12 @@ import cvwhite from "./img/cvWhite.png";
 import devlogo from "./img/devlogo.png";
 
 export default function Home({ translate }) {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={
+      className={`home_container ${
         theme === "light" ? " home_container lights" : "home_container darks"
-      }
+      }`}
     >
       <div className="presentation">
         <div className="presentation-txt">
@@ -32,14 +32,23 @@ export default function Home({ translate }) {
           <a href="https://github.com/David-Chazoule">
             <img
               src={theme === "light" ? LinkedinLogo : LinkedinWhite}
-              alt=""
+              alt="Linkedin-logo"
+              title="Linkedin"
             />
           </a>
           <a href="https://github.com/David-Chazoule">
-            <img src={theme === "light" ? github : githubWhite} alt="" />
+            <img
+              src={theme === "light" ? github : githubWhite}
+              alt="Github-logo"
+              title="Github"
+            />
           </a>
           <a href="https://github.com/David-Chazoule">
-            <img src={theme === "light" ? CV : cvwhite} alt="" />
+            <img
+              src={theme === "light" ? CV : cvwhite}
+              alt="cv-logo"
+              title={translate ? "téléchargement CV" : "download cv"}
+            />
           </a>
         </div>
       </div>

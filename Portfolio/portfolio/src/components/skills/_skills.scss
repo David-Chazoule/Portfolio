@@ -5,6 +5,20 @@
   height: fit-content;
   align-items: center;
   padding: 8rem 1rem 1rem;
-  @include backgroundDark;
   min-height: 100vh;
+
+  h1{
+    margin-bottom: 5vh;
+  }
+}
+
+.skills_containerLight{
+  background-color: rgb(224, 224, 240);
+  color: black;
+
+}
+.skills_containerDark{
+  @include backgroundDark;
+  color: white;
+
 }

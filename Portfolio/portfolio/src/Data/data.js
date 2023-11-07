@@ -9,7 +9,7 @@ export const navbar = [
   {
     menuFr: "A propos",
     menuEn: "About",
-    route: "about",
+    route: "About",
   },
   {
     menuFr: "Compétences",
