@@ -37,14 +37,14 @@ export default function ProjectCard({
         />
 
         <div className="description-card">
-          <h3>{translate ? titleFr : titleEn}</h3>
+          <h2>{translate ? titleFr : titleEn}</h2>
           <div>
             <p>{translate ? descriptionFr : descriptionEn}</p>
           </div>
 
           <div className="project-link">
             {githubOk === true ? (
-              <button>
+              <button className={theme === "light" ? "btnLight" : "btnDark"}>
                 <a href={github}>GitHub</a>
               </button>
             ) : (
@@ -52,14 +52,14 @@ export default function ProjectCard({
             )}
 
             {gitOk === true ? (
-              <button>
+              <button className={theme === "light" ? "btnLight" : "btnDark"}>
                 <a href={github2}>GitHub back-end</a>
               </button>
             ) : (
               ""
             )}
             {liveOk === true ? (
-              <button>
+              <button className={theme === "light" ? "btnLight" : "btnDark"}>
                 <a href={live}>Live</a>
               </button>
             ) : (

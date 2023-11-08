@@ -52,8 +52,6 @@
           }
         }
 
-        
-
         textarea {
           text-align: start;
           width: 50%;
@@ -61,20 +59,14 @@
           background-color: rgb(213, 207, 207);
           margin-top: 20px;
           font-size: 20px;
-
-        
-          
         }
 
-        textarea::placeholder{
+        textarea::placeholder {
           color: black;
-            opacity: 0.6;
-            font-size: 16px;
-            font-weight: 600;
-
+          opacity: 0.6;
+          font-size: 16px;
+          font-weight: 600;
         }
-
-        
 
         button {
           margin: 30px;
@@ -83,8 +75,23 @@
           padding: 8px;
           border-radius: 5px;
           cursor: pointer;
-          background-color: #231227;
           color: white;
+        }
+
+        .btnLight {
+          background-color: #414d97;
+          &:hover {
+            transform: scale(1.1);
+            background-color: #6670bc;
+          }
+        }
+
+        .btnDark {
+          background-color: rgb(101, 33, 118);
+          &:hover {
+            transform: scale(1.1);
+            background-color: rgb(124, 55, 142);
+          }
         }
       }
     }

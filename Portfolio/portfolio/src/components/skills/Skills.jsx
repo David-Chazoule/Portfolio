@@ -11,6 +11,18 @@ export default function Skills({ translate }) {
       }`}
     >
       <h1>{translate ? skillsTitle.titleFr : skillsTitle.titleEn}</h1>
+
+      <div className="skill-box">
+        <div className="tech-skills">
+          <h2>Lorem ipsum</h2>
+        </div>
+
+        <span></span>
+
+        <div className="tech-skills">
+          <h2>Lorem ipsum</h2>
+        </div>
+      </div>
     </div>
   );
 }

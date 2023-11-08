@@ -7,18 +7,39 @@
   padding: 8rem 1rem 1rem;
   min-height: 100vh;
 
-  h1{
+  h1 {
     margin-bottom: 5vh;
+  }
+
+  .skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 40px 0;
+    width: 100%;
+
+    span {
+      width: 2px;
+      height: 60vh;
+      background-color: aliceblue;
+    }
+
+    .tech-skills {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 60vh;
+      align-items: center;
+    }
   }
 }
 
-.skills_containerLight{
+.skills_containerLight {
   background-color: rgb(224, 224, 240);
   color: black;
-
 }
-.skills_containerDark{
+.skills_containerDark {
   @include backgroundDark;
   color: white;
-
 }

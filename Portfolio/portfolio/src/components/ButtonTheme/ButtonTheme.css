@@ -7,6 +7,10 @@
   height: 22px;
   cursor: pointer;
 }
+.button_container:hover {
+  transform: scale(1.4);
+  transition: 1s ease-out;
+}
 .button_container .logoBtn {
   width: 20px;
 }

@@ -71,7 +71,10 @@ export default function Contact({ translate }) {
               }
               required
             ></textarea>
-            <button type="submit">
+            <button
+              className={theme === "light" ? "btnLight" : "btnDark"}
+              type="submit"
+            >
               {translate ? contactData.btnFr : contactData.btnEn}
             </button>
           </form>
