@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { aboutData } from "../../Data/data";
+
 import profilePicture from "../about/img/profilePicture.jpg";
 
-export default function About({translate}) {
+export default function About({ translate }) {
   const { theme } = useContext(ThemeContext);
   return (
     <div
@@ -13,7 +14,7 @@ export default function About({translate}) {
           : "about_container about_containerDark"
       }
     >
-      <h1>{translate? aboutData.titleFr: aboutData.titleEn}</h1>
+      <h1>{translate ? aboutData.titleFr : aboutData.titleEn}</h1>
 
       <div className="about-box">
         <div className="about-txt">
@@ -37,6 +38,28 @@ export default function About({translate}) {
 
         <div className="about-picture">
           <img src={profilePicture} alt="" />
+        </div>
+      </div>
+
+      <span
+        className={` barSkill ${theme === "light" ? "barLight" : "barDark"}`}
+      ></span>
+      <div className="skill_container">
+        <h2>{translate ? aboutData.skillTitleFr : aboutData.skillTitleEn}</h2>
+        <div className="skill-img-box">
+          {theme === "light"
+            ? aboutData.skillImgLight &&
+              aboutData.skillImgLight.map((item, key) => (
+                <img src={require("./imgSkills/" + item + ".png")} alt="" />
+              ))
+            : aboutData.skillImgDark &&
+              aboutData.skillImgDark.map((item, key) => (
+                <img
+                  className={theme === "light" ? "imgLight" : "imgDark"}
+                  src={require("./imgSkills/" + item + ".png")}
+                  alt=""
+                />
+              ))}
         </div>
       </div>
     </div>

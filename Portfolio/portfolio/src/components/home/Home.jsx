@@ -21,14 +21,17 @@ export default function Home({ translate }) {
         <div className="presentation-txt">
           <h1>
             {translate ? homeData.salutationFr : homeData.salutationEn}{" "}
-            <span>David</span>{" "}
+            <span className={theme==='light'? 'nameLight':'nameDark'}>David</span>{" "}
           </h1>
 
           <h2>
             {translate ? homeData.presentationFr : homeData.presentationEn}
           </h2>
+
+          <span className={`bar-separate ${theme==='light'?'bar-light':'bar-dark'}`}></span>
         </div>
         <div className="contact-box">
+          
           <a href="https://github.com/David-Chazoule">
             <img
               src={theme === "light" ? LinkedinLogo : LinkedinWhite}

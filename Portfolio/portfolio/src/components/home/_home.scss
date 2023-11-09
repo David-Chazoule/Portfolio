@@ -22,15 +22,38 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin-bottom: 100px;
 
       h1 {
         font-size: 50px;
 
         span {
           font-weight: 800;
+        }
+
+        .nameLight {
           color: #414d97;
         }
+
+        .nameDark {
+          color: rgb(101, 33, 118);
+        }
+      }
+
+      .bar-separate {
+        width: 300px;
+        height: 6px;
+        margin: 80px 0 40px 0;
+        border-radius: 50%;
+        filter: drop-shadow(7px 7px 7px #666666);
+        -webkit-filter: drop-shadow(7px 7px 7px #666666);
+      }
+
+      .bar-light {
+        background-color: #414d97;
+      }
+
+      .bar-dark {
+        background-color: rgb(101, 33, 118);
       }
     }
 
@@ -39,6 +62,7 @@
       width: 100%;
       justify-content: center;
       align-items: center;
+
       img {
         width: 80px;
         margin: 0 20px 0 20px;

@@ -207,14 +207,32 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 100px;
 }
 .home_container .presentation .presentation-txt h1 {
   font-size: 50px;
 }
 .home_container .presentation .presentation-txt h1 span {
   font-weight: 800;
+}
+.home_container .presentation .presentation-txt h1 .nameLight {
   color: #414d97;
+}
+.home_container .presentation .presentation-txt h1 .nameDark {
+  color: rgb(101, 33, 118);
+}
+.home_container .presentation .presentation-txt .bar-separate {
+  width: 300px;
+  height: 6px;
+  margin: 80px 0 40px 0;
+  border-radius: 50%;
+  filter: drop-shadow(7px 7px 7px #666666);
+  -webkit-filter: drop-shadow(7px 7px 7px #666666);
+}
+.home_container .presentation .presentation-txt .bar-light {
+  background-color: #414d97;
+}
+.home_container .presentation .presentation-txt .bar-dark {
+  background-color: rgb(101, 33, 118);
 }
 .home_container .presentation .contact-box {
   display: flex;
@@ -268,7 +286,7 @@
   display: flex;
   width: 100%;
   max-width: 1500px;
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   height: -moz-fit-content;
   height: fit-content;
   align-items: center;
@@ -276,20 +294,62 @@
 }
 .about_container .about-box .about-txt {
   display: flex;
-  width: 80%;
+  width: 60%;
   min-height: 40vh;
 }
 .about_container .about-box .about-txt p {
-  margin: 0 10vh;
+  margin: 0 4vh 0 8vh;
   font-size: 20px;
 }
 .about_container .about-box .about-picture {
   display: flex;
-  width: 50%;
+  width: 60%;
   min-height: 40vh;
 }
 .about_container .about-box .about-picture img {
   width: 60%;
+  height: auto;
+}
+.about_container .barSkill {
+  width: 300px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 80px 0 40px 0;
+  filter: drop-shadow(7px 7px 7px #666666);
+  -webkit-filter: drop-shadow(7px 7px 7px #666666);
+}
+.about_container .barLight {
+  background-color: #414d97;
+}
+.about_container .barDark {
+  background-color: rgb(101, 33, 118);
+}
+.about_container .skill_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.about_container .skill_container .skill-img-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.about_container .skill_container .skill-img-box img {
+  width: 90px;
+  margin: 10px;
+}
+.about_container .skill_container .skill-img-box .imgLight {
+  filter: drop-shadow(4px 4px 4px #666666);
+  -webkit-filter: drop-shadow(4px 4px 4px #666666);
+}
+.about_container .skill_container .skill-img-box .imgDark {
+  filter: drop-shadow(2px 2px 2px #666666);
+  -webkit-filter: drop-shadow(2px 2px 2px #666666);
 }
 
 .about_containerLight {
@@ -405,7 +465,7 @@
 }
 .projectCard_container .card img {
   width: 98%;
-  height: 160px;
+  height: 180px;
   margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.298);
   border-radius: 6px;

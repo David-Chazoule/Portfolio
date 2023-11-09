@@ -11,7 +11,7 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext("dark");
 
 function App() {
-  const [translate, setTranslate] = useState(false);
+  const [translate, setTranslate] = useState(true);
   
 
   
@@ -24,7 +24,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home translate={translate} />} />
         <Route path="/About" element={<About translate={translate} />} />
-        <Route path="/Skills" element={<Skills translate={translate} />} />
+        {/* <Route path="/Skills" element={<Skills translate={translate} />} /> */}
         <Route path="/Projects" element={<Projects translate={translate} />} />
         <Route path="/Contact" element={<Contact translate={translate} />} />
       </Routes>

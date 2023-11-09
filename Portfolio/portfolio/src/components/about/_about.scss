@@ -15,29 +15,79 @@
     display: flex;
     width: 100%;
     max-width: 1500px;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
     height: fit-content;
     align-items: center;
     justify-content: center;
 
     .about-txt {
       display: flex;
-      width: 80%;
+      width: 60%;
       min-height: 40vh;
 
       p {
-        margin: 0 10vh;
+        margin: 0 4vh 0 8vh;
         font-size: 20px;
       }
     }
 
     .about-picture {
       display: flex;
-      width: 50%;
+      width: 60%;
       min-height: 40vh;
 
       img {
         width: 60%;
+        height: auto;
+      }
+    }
+  }
+
+  .barSkill {
+    width: 300px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 80px 0 40px 0;
+    filter: drop-shadow(7px 7px 7px #666666);
+    -webkit-filter: drop-shadow(7px 7px 7px #666666);
+  }
+
+  .barLight {
+    background-color: #414d97;
+  }
+
+  .barDark {
+    background-color: rgb(101, 33, 118);
+  }
+
+  .skill_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .skill-img-box {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+
+      img {
+        width: 90px;
+        margin: 10px;
+      }
+
+      .imgLight {
+        filter: drop-shadow(4px 4px 4px #666666);
+        -webkit-filter: drop-shadow(4px 4px 4px #666666);
+      }
+
+      .imgDark {
+        filter: drop-shadow(2px 2px 2px #666666);
+        -webkit-filter: drop-shadow(2px 2px 2px #666666);
       }
     }
   }

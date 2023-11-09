@@ -47,6 +47,10 @@ export const aboutData = {
   titleEn: "About",
   aboutTxtFr: "",
   aboutTxtEn: "",
+  skillTitleFr:"Langages et outils que j'utilise :",
+  skillTitleEn:" Languages and tools I use:",
+  skillImgLight:["HTMLLight","CSSLight","SASSLight","JSLight","REACTLight","NODELight","GITHUBLight"],
+  skillImgDark:["HTMLDark","CSSDark","SASSDark","JSDark","REACTDark","NODEDark","GITHUBDark"],
 };
 
 /* skills data */
