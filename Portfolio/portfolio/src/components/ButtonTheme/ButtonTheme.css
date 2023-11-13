@@ -11,12 +11,18 @@
   transform: scale(1.4);
   transition: 1s ease-out;
 }
-.button_container .logoBtn {
-  width: 20px;
+
+.logoBtn {
+  width: 26px;
+  transition-duration: 10s;
 }
-.button_container .button_containerLight {
-  border: 1px solid black;
+
+.button_containerLight:hover {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(360deg);
 }
-.button_container .button_containerDark {
-  border: 1px solid white;
+
+.button_containerDark:hover {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(-30deg);
 }/*# sourceMappingURL=ButtonTheme.css.map */

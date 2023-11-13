@@ -28,14 +28,22 @@
 
         span {
           font-weight: 800;
+
+          
         }
 
         .nameLight {
           color: #414d97;
+          &:hover{
+            transform: scale(1.2);
+          }
         }
 
         .nameDark {
           color: rgb(101, 33, 118);
+          &:hover{
+            transform: scale(1.2);
+          }
         }
       }
 

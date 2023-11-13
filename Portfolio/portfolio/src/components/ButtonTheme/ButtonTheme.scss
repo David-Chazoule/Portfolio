@@ -6,20 +6,31 @@
   width: 40px;
   height: 22px;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     transform: scale(1.4);
     transition: 1s ease-out;
   }
+}
 
-  .logoBtn {
-    width: 20px;
+.logoBtn {
+  width: 26px;
+  -webkit-transition-duration: 10s;
+  -moz-transition-duration: 10s;
+  -o-transition-duration: 10s;
+  transition-duration: 10s;
+}
+
+.button_containerLight {
+  &:hover {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(360deg);
   }
+}
 
-  .button_containerLight {
-    border: 1px solid black;
-  }
-
-  .button_containerDark {
-    border: 1px solid white;
+.button_containerDark {
+  &:hover {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(-30deg);
   }
 }

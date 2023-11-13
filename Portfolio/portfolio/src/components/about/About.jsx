@@ -6,6 +6,7 @@ import profilePicture from "../about/img/profilePicture.jpg";
 
 export default function About({ translate }) {
   const { theme } = useContext(ThemeContext);
+
   return (
     <div
       className={
@@ -37,7 +38,13 @@ export default function About({ translate }) {
         </div>
 
         <div className="about-picture">
-          <img src={profilePicture} alt="" />
+          <img
+            className={
+              theme === "light" ? "img-light-border" : "img-dark-border"
+            }
+            src={profilePicture}
+            alt=""
+          />
         </div>
       </div>
 
@@ -48,17 +55,25 @@ export default function About({ translate }) {
         <h2>{translate ? aboutData.skillTitleFr : aboutData.skillTitleEn}</h2>
         <div className="skill-img-box">
           {theme === "light"
-            ? aboutData.skillImgLight &&
-              aboutData.skillImgLight.map((item, key) => (
-                <img src={require("./imgSkills/" + item + ".png")} alt="" />
-              ))
-            : aboutData.skillImgDark &&
-              aboutData.skillImgDark.map((item, key) => (
+            ? aboutData.skillImg &&
+              aboutData.skillImg.map((item, key) => (
                 <img
-                  className={theme === "light" ? "imgLight" : "imgDark"}
-                  src={require("./imgSkills/" + item + ".png")}
-                  alt=""
+                  className="imgLight"
+                  src={require("./imgSkillsLight/" + item + ".png")}
+                  alt={item + "-logo"}
+                  title={item}
                 />
+              ))
+            : aboutData.skillImg &&
+              aboutData.skillImg.map((item, key) => (
+                <>
+                  <img
+                    className="imgDark"
+                    src={require("./imgSkillsDark/" + item + ".png")}
+                    alt={item + "-logo"}
+                    title={item}
+                  />
+                </>
               ))}
         </div>
       </div>

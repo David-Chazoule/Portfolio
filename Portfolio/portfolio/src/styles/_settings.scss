@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(./font/Montserrat-Medium.ttf);
+}
+
+$fontone: Roboto;
+$fonttwo: montserrat;
+
+
 $color-headerDark: #212529;
 
 $colorCardDark: #110231;

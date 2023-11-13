@@ -2,29 +2,28 @@
 
 export const navbar = [
   {
-    menuFr: "Accueil",
-    menuEn: "Home",
+    menuFr: "ACCUEIL",
+    menuEn: "HOME",
     route: "",
   },
   {
-    menuFr: "A propos",
-    menuEn: "About",
+    menuFr: "A PROPOS",
+    menuEn: "ABOUT",
     route: "About",
   },
   {
-    menuFr: "Compétences",
-    menuEn: "Skills",
+    menuFr: "COMPETENCES",
+    menuEn: "SKILLS",
     route: "Skills",
   },
   {
-    menuFr: "Projet",
-    menuEn: "Project",
+    menuFr: "PROJETS",
+    menuEn: "PROJECTS",
     route: "Projects",
   },
-
   {
-    menuFr: "Contactez moi",
-    menuEn: "Contact me",
+    menuFr: "CONTACTEZ MOI",
+    menuEn: "CONTACT ME",
     route: "Contact",
   },
 ];
@@ -47,10 +46,9 @@ export const aboutData = {
   titleEn: "About",
   aboutTxtFr: "",
   aboutTxtEn: "",
-  skillTitleFr:"Langages et outils que j'utilise :",
-  skillTitleEn:" Languages and tools I use:",
-  skillImgLight:["HTMLLight","CSSLight","SASSLight","JSLight","REACTLight","NODELight","GITHUBLight"],
-  skillImgDark:["HTMLDark","CSSDark","SASSDark","JSDark","REACTDark","NODEDark","GITHUBDark"],
+  skillTitleFr: "Langages et outils que j'utilise :",
+  skillTitleEn: " Languages and tools I use:",
+  skillImg: ["HTML", "CSS", "JS", "SASS", "REACT", "NODE", "GITHUB"],
 };
 
 /* skills data */
