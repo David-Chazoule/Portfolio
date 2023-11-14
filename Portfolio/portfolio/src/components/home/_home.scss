@@ -7,6 +7,10 @@
   justify-content: center;
   display: flex;
 
+  @media screen and (max-width: 1200px) {
+    align-items: flex-start;
+  }
+
   .presentation {
     display: flex;
     flex-direction: column;
@@ -14,6 +18,10 @@
     align-items: center;
     width: 40%;
     height: 50vh;
+
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
 
     .presentation-txt {
       display: flex;
@@ -25,23 +33,24 @@
 
       h1 {
         font-size: 50px;
+        @media screen and (max-width: 1200px) {
+          font-size: 30px;
+        }
 
         span {
           font-weight: 800;
-
-          
         }
 
         .nameLight {
           color: #414d97;
-          &:hover{
+          &:hover {
             transform: scale(1.2);
           }
         }
 
         .nameDark {
           color: rgb(101, 33, 118);
-          &:hover{
+          &:hover {
             transform: scale(1.2);
           }
         }
@@ -54,6 +63,11 @@
         border-radius: 50%;
         filter: drop-shadow(7px 7px 7px #666666);
         -webkit-filter: drop-shadow(7px 7px 7px #666666);
+
+        @media screen and (max-width: 1100px) {
+          width: 200px;
+          margin: 50px 0 40px 0;
+        }
       }
 
       .bar-light {
@@ -74,6 +88,10 @@
       img {
         width: 80px;
         margin: 0 20px 0 20px;
+
+        @media screen and (max-width: 1150px) {
+          width: 50px;
+        }
 
         &:hover {
           transform: scale(1.2);

@@ -17,6 +17,7 @@ export default function Projects({ translate }) {
       <div className="project_card_box">
         {project &&
           project.map((elem, key) => (
+            
             <ProjectCard
               key={key}
               img={elem.img}

@@ -8,17 +8,15 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.4);
-    transition: 1s ease-out;
+    -webkit-transition-duration: 4s;
+    -moz-transition-duration: 4s;
+    -o-transition-duration: 4s;
+    transition-duration: 4s;
   }
 }
 
 .logoBtn {
   width: 26px;
-  -webkit-transition-duration: 10s;
-  -moz-transition-duration: 10s;
-  -o-transition-duration: 10s;
-  transition-duration: 10s;
 }
 
 .button_containerLight {

@@ -11,11 +11,11 @@ export const navbar = [
     menuEn: "ABOUT",
     route: "About",
   },
-  {
-    menuFr: "COMPETENCES",
-    menuEn: "SKILLS",
-    route: "Skills",
-  },
+  // {
+  //   menuFr: "COMPETENCES",
+  //   menuEn: "SKILLS",
+  //   route: "Skills",
+  // },
   {
     menuFr: "PROJETS",
     menuEn: "PROJECTS",
@@ -85,7 +85,6 @@ export const projectTitle = {
 export const project = [
   {
     img: "NumeroVert",
-    imganimate: "NumeroVertAN",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -96,11 +95,10 @@ export const project = [
     githubLink: "",
     live: true,
     liveLink: "https://dev-portfolio-mayankagarwal09.vercel.app/",
-    tags: ["react", "Js", "Css", "Node Js"],
+    tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
     img: "centrex",
-    imganimate: "centrexAN",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -111,11 +109,10 @@ export const project = [
     githubLink: "",
     live: true,
     liveLink: "",
-    tags: ["react", "Js", "Css", "Node Js"],
+    tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
     img: "vert",
-    imganimate: "vertAN",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -126,11 +123,10 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule",
     live: true,
     liveLink: "https://dunks1980.com/",
-    tags: ["react", "Js", "Css", "Node Js"],
+    tags: ["REACT", "JS", "CSS"],
   },
   {
-    img: "bodyMesure",
-    imganimate: "MesureBodyAN",
+    img: "MesureBody",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -141,11 +137,10 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule",
     live: true,
     liveLink: "https://dunks1980.com/",
-    tags: ["react", "Js", "Sass"],
+    tags: ["REACT", "JS", "CSS"],
   },
   {
     img: "mars",
-    imganimate: "marsAN",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -156,11 +151,10 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule",
     live: true,
     liveLink: "https://dunks1980.com/",
-    tags: ["react", "Js", "CSS"],
+    tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
-    img: "technologeekAN",
-    imganimate: "technologeekAN",
+    img: "technologeek",
     titleFr: "Lorem ipsum",
     titleEn: "Lorem ipsum",
     descriptionFr:
@@ -173,6 +167,6 @@ export const project = [
     git: true,
     live: false,
     liveLink: "https://dunks1980.com/",
-    tags: ["react", "Js", "SASS"],
+    tags: ["REACT", "JS", "SASS"],
   },
 ];

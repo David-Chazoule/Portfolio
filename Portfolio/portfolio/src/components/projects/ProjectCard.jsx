@@ -2,9 +2,8 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ProjectCard({
-  key,
+  
   img,
-  imganimate,
   titleFr,
   titleEn,
   descriptionEn,
@@ -22,7 +21,7 @@ export default function ProjectCard({
 
   return (
     <div
-      key={key}
+      
       className={
         theme === "light"
           ? `projectCard_container projectCardLight`
@@ -31,7 +30,7 @@ export default function ProjectCard({
     >
       <div className="card">
         <img
-          src={process.env.PUBLIC_URL + `/img/${imganimate}.gif`}
+          src={process.env.PUBLIC_URL + `/img/${img}.gif`}
           title={img + ` image`}
           alt={img}
         />
@@ -75,7 +74,22 @@ export default function ProjectCard({
               : "footer-tagg footerDark-tagg"
           }
         >
-          {tags && tags.map((elem, key) => <span key={key}>{elem}</span>)}
+          {tags &&
+            tags.map((elem, key) =>
+              theme === "light" ? (
+                <img key={key}
+                  src={require("../about/imgSkillsLight/" + elem + ".png")}
+                  alt={elem}
+                  title={elem}
+                />
+              ) : (
+                <img key={key}
+                  src={require("../about/imgSkillsDark/" + elem + ".png")}
+                  alt={elem}
+                  title={elem}
+                />
+              )
+            )}
         </div>
       </div>
     </div>

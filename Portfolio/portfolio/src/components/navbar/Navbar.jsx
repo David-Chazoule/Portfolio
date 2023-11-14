@@ -35,7 +35,11 @@ export default function Navbar({ translate }) {
       </ul>
 
       <button className="navbar_burger " onClick={handleShowLinks}>
-        <span className={`burger-bar ${showLinks ? "burgerx" : ""}`}></span>
+        <span
+          className={` ${theme === "light" ? "burgerLight" : "burgerDark"} ${
+            showLinks ? "burgerx" : ""
+          }`}
+        ></span>
       </button>
     </nav>
   );
