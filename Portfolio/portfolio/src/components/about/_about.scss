@@ -10,8 +10,23 @@
   letter-spacing: 1px;
   line-height: 1.6em;
 
+  @media screen and (max-width: 1200px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0.5rem 0.5rem;
+  }
+
   h1 {
     margin-bottom: 6vh;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
   }
 
   .about-box {
@@ -23,36 +38,76 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+      max-width: none;
+      margin: 10px 20px;
+    }
+
     .about-txt {
       display: flex;
       width: 60%;
       min-height: 40vh;
 
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+
       p {
         margin: 2vh 2vh 0 8vh;
         font-size: 18px;
+
+        @media screen and (max-width: 600px) {
+          margin: 1vh 1vh;
+          font-size: 14px;
+          margin: 0;
+        }
       }
     }
 
     .about-picture {
       display: flex;
-      width:45%;
+      width: 45%;
       min-height: 40vh;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        justify-content: center;
+        min-height: 24px;
+        margin-bottom: 20px;
+      }
 
       img {
         width: 60%;
         height: auto;
         border-radius: 50%;
+
+        @media screen and (max-width: 600px) {
+          width: 50%;
+          height: 200px;
+        }
       }
 
       .img-light-border {
         filter: drop-shadow(4px 4px 4px #666666);
         -webkit-filter: drop-shadow(6px 4px 6px #666666);
+
+        @media screen and (max-width: 910px) {
+          filter: none;
+          -webkit-filter: none;
+        }
       }
 
       .img-dark-border {
         filter: drop-shadow(1px 2px 3px white);
         -webkit-filter: drop-shadow(6px -14px 30px rgb(101, 33, 118));
+
+        @media screen and (max-width: 910px) {
+          filter: none;
+          -webkit-filter: none;
+        }
       }
     }
   }
@@ -64,6 +119,12 @@
     margin: 80px 0 40px 0;
     filter: drop-shadow(7px 7px 7px #666666);
     -webkit-filter: drop-shadow(7px 7px 7px #666666);
+
+    @media screen and (max-width: 600px) {
+      margin: 15px 0;
+      filter: none;
+      -webkit-filter: none;
+    }
   }
 
   .barLight {
@@ -77,10 +138,17 @@
   .skill_container {
     display: flex;
     flex-direction: column;
-    max-width: 1500px;
+
     width: 100%;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 600px) {
+    }
+
+    h2 {
+      font-size: 18px;
+    }
 
     .skill-img-box {
       display: flex;
@@ -92,6 +160,11 @@
       img {
         width: 100px;
         margin: 10px;
+
+        @media screen and (max-width: 600px) {
+          width: 40px;
+          margin: 5px;
+        }
         &:hover {
           transform: scale(1.1);
         }
@@ -100,11 +173,21 @@
       .imgLight {
         filter: drop-shadow(4px 4px 4px #666666);
         -webkit-filter: drop-shadow(4px 4px 4px #666666);
+
+        @media screen and (max-width: 600px) {
+          filter: none;
+          -webkit-filter: none;
+        }
       }
 
       .imgDark {
         filter: drop-shadow(1px 2px 3px white);
         -webkit-filter: drop-shadow(1px 2px 3px white);
+
+        @media screen and (max-width: 600px) {
+          filter: none;
+          -webkit-filter: none;
+        }
       }
     }
   }
