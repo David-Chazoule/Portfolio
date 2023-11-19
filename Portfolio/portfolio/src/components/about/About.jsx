@@ -19,22 +19,7 @@ export default function About({ translate }) {
 
       <div className="about-box">
         <div className="about-txt">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
+          <p>{aboutData.aboutTxtFr}</p>
         </div>
 
         <div className="about-picture">
@@ -57,23 +42,25 @@ export default function About({ translate }) {
           {theme === "light"
             ? aboutData.skillImg &&
               aboutData.skillImg.map((item, key) => (
-                <img
-                  className="imgLight"
-                  src={require("./imgSkillsLight/" + item + ".png")}
-                  alt={item + "-logo"}
-                  title={item}
-                />
+                <div key={key}>
+                  <img
+                    className="imgLight"
+                    src={require("./imgSkillsLight/" + item + ".png")}
+                    alt={item + "-logo"}
+                    title={item}
+                  />
+                </div>
               ))
             : aboutData.skillImg &&
               aboutData.skillImg.map((item, key) => (
-                <>
+                <div key={key}>
                   <img
                     className="imgDark"
                     src={require("./imgSkillsDark/" + item + ".png")}
                     alt={item + "-logo"}
                     title={item}
                   />
-                </>
+                </div>
               ))}
         </div>
       </div>

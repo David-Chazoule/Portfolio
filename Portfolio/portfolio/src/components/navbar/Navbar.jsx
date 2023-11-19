@@ -20,6 +20,7 @@ export default function Navbar({ translate }) {
       >
         {navbar &&
           navbar.map((elem, key) => (
+            <div key={key}>
             <Link to={`/${elem.route}`}>
               <li
                 className={` navbar_item ${
@@ -31,6 +32,7 @@ export default function Navbar({ translate }) {
                 {translate ? elem.menuFr : elem.menuEn}
               </li>
             </Link>
+            </div>
           ))}
       </ul>
 

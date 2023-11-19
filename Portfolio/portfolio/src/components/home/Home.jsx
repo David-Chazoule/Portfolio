@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { homeData } from "../../Data/data";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import LinkedinLogo from "./img/LinkedinLogo.png";
 import LinkedinWhite from "./img/LinkedinWhite.png";
 import github from "./img/github.png";
@@ -21,17 +23,22 @@ export default function Home({ translate }) {
         <div className="presentation-txt">
           <h1>
             {translate ? homeData.salutationFr : homeData.salutationEn}{" "}
-            <span className={theme==='light'? 'nameLight':'nameDark'}>David</span>{" "}
+            <span className={theme === "light" ? "nameLight" : "nameDark"}>
+              David
+            </span>{" "}
           </h1>
 
           <h2>
             {translate ? homeData.presentationFr : homeData.presentationEn}
           </h2>
 
-          <span className={`bar-separate ${theme==='light'?'bar-light':'bar-dark'}`}></span>
+          <span
+            className={`bar-separate ${
+              theme === "light" ? "bar-light" : "bar-dark"
+            }`}
+          ></span>
         </div>
         <div className="contact-box">
-          
           <a href="https://github.com/David-Chazoule">
             <img
               src={theme === "light" ? LinkedinLogo : LinkedinWhite}

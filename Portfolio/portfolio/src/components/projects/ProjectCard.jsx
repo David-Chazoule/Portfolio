@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ProjectCard({
-  
   img,
   titleFr,
   titleEn,
@@ -21,7 +20,6 @@ export default function ProjectCard({
 
   return (
     <div
-      
       className={
         theme === "light"
           ? `projectCard_container projectCardLight`
@@ -36,7 +34,7 @@ export default function ProjectCard({
         />
 
         <div className="description-card">
-          <h2>{translate ? titleFr : titleEn}</h2>
+          <h2 className="title-project">{translate ? titleFr : titleEn}</h2>
           <div>
             <p>{translate ? descriptionFr : descriptionEn}</p>
           </div>
@@ -77,13 +75,15 @@ export default function ProjectCard({
           {tags &&
             tags.map((elem, key) =>
               theme === "light" ? (
-                <img key={key}
+                <img
+                  key={key}
                   src={require("../about/imgSkillsLight/" + elem + ".png")}
                   alt={elem}
                   title={elem}
                 />
               ) : (
-                <img key={key}
+                <img
+                  key={key}
                   src={require("../about/imgSkillsDark/" + elem + ".png")}
                   alt={elem}
                   title={elem}
