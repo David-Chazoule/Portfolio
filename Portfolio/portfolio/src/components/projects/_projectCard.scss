@@ -9,6 +9,9 @@
   width: 450px;
   height: fit-content;
   margin: 10px;
+  font-family: $fonttwo;
+  letter-spacing: 1px;
+  line-height: 1.6em;
 
   @media screen and (max-width: 550px) {
     width: 100%;
@@ -53,23 +56,37 @@
       div {
         width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 5px;
-        height: 180px;
-        margin-top: 10px;
+        padding: 4px 10px;
+        height: 130px;
+        margin-top: 20px;
 
         @media screen and (max-width: 550px) {
-          height: 200px;
+          height: 130px;
         }
 
         @media screen and (max-width: 405px) {
-          height: 230px;
+          height: 120px;
+        }
+
+        @media screen and (max-width: 380px) {
+          height: 160px;
+        }
+
+        @media screen and (max-width: 370px) {
+          height: 170px;
+          margin-top: 30px;
         }
 
         p {
           font-size: 18px;
           text-align: justify;
-          margin: 16px 10px 0 10px;
+          margin: 0 20px 0 20px;
+
+          @media screen and (max-width: 550px) {
+            font-size: 16px;
+          }
 
           @media screen and (max-width: 550px) {
             font-size: 16px;
@@ -88,6 +105,7 @@
         }
 
         button {
+          font-family: $fonttwo;
           width: 140px;
           height: 50px;
           border: none;

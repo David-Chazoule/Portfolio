@@ -6,15 +6,15 @@
   align-items: center;
   justify-content: center;
   padding: 8rem 1rem 1rem;
+  font-family: $fonttwo;
 
   @media screen and (max-width: 550px) {
     padding: 6rem 0;
-
   }
-
 
   h1 {
     margin-bottom: 5vh;
+    font-weight: bold;
   }
 
   .project_card_box {
@@ -23,19 +23,17 @@
     max-width: 1500px;
     margin: 40px 0;
     flex-wrap: wrap;
-
     justify-content: center;
 
     @media screen and (max-width: 550px) {
       margin: 10px 0;
-
     }
   }
 }
 
 .project_containerLight {
   background-color: rgb(224, 224, 240);
-  color: black;
+  color: #414d97;
 }
 
 .project_containerDark {

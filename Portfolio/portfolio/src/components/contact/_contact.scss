@@ -6,15 +6,17 @@
   align-items: center;
   padding: 8rem 1rem 1rem;
   min-height: 100vh;
+  font-family: $fonttwo;
 
   @media screen and (max-width: 910px) {
     justify-content: center;
     align-items: center;
-    padding: 6rem 0 0 0;
+    padding: 5rem 0 0 0;
   }
 
   h1 {
     margin-bottom: 5vh;
+    font-weight: bold;
 
     @media screen and (max-width: 910px) {
       margin-bottom: 0;
@@ -39,7 +41,7 @@
       width: 50%;
 
       @media screen and (max-width: 910px) {
-        width: 80%;
+        width: 70%;
       }
     }
     .contact-card {
@@ -124,6 +126,7 @@
         }
 
         button {
+          font-family: $fonttwo;
           margin: 30px;
           width: 40%;
           font-size: 20px;
@@ -170,7 +173,7 @@
 
 .contact_containerLight {
   background-color: rgb(224, 224, 240);
-  color: black;
+  color: #414d97;
 }
 
 .contact_containerDark {

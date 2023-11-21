@@ -1,9 +1,12 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef, useContext, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
 import emailjs from "@emailjs/browser";
 import { contactData } from "../../Data/data";
-
+import "react-toastify/dist/ReactToastify.css";
 import sendEmailImg from "./img/sendEmail.png";
+
+
 export default function Contact({ translate }) {
   const form = useRef();
   const { theme } = useContext(ThemeContext);
@@ -27,6 +30,21 @@ export default function Contact({ translate }) {
         }
       );
     e.target.reset();
+  };
+  const notify = () => {
+    toast(
+      translate ? "votre message a été envoyé!" : "Your message has been sent!",
+      {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: theme === "light" ? "light" : "dark",
+      }
+    );
   };
 
   return (
@@ -75,6 +93,7 @@ export default function Contact({ translate }) {
             <button
               className={theme === "light" ? "btnLight" : "btnDark"}
               type="submit"
+              onClick={notify}
             >
               {translate ? contactData.btnFr : contactData.btnEn}
             </button>
@@ -83,6 +102,19 @@ export default function Contact({ translate }) {
 
         <img src={sendEmailImg} alt="" />
       </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover
+        theme={theme === "light" ? "light" : "dark"}
+        style={{ with: "300px", fontSize: "20px", fontWeight: "600" }}
+      />
     </div>
   );
 }

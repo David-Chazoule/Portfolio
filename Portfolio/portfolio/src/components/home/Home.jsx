@@ -39,7 +39,7 @@ export default function Home({ translate }) {
           ></span>
         </div>
         <div className="contact-box">
-          <a href="https://github.com/David-Chazoule">
+          <a href="https://www.linkedin.com/in/david-chazoule/">
             <img
               src={theme === "light" ? LinkedinLogo : LinkedinWhite}
               alt="Linkedin-logo"
@@ -53,7 +53,7 @@ export default function Home({ translate }) {
               title="Github"
             />
           </a>
-          <a href="https://github.com/David-Chazoule">
+          <a href="https://drive.google.com/uc?export=download&id=1-WsIjZM6oMrGFpM9ewrVTqSFUKTefkj2">
             <img
               src={theme === "light" ? CV : cvwhite}
               alt="cv-logo"
