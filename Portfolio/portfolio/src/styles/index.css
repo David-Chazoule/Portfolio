@@ -10,11 +10,38 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 75px;
+  min-height: 80px;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  padding: 1rem;
+  padding: 10px;
+}
+.header-container .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+}
+.header-container .logo .logoImg {
+  width: 40px;
+}
+.header-container .logo .name-logo {
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: 2px;
+}
+@media screen and (max-width: 600px) {
+  .header-container .logo .name-logo {
+    font-size: 12px;
+  }
+}
+.header-container .logo .nameLight {
+  color: #414d97;
+}
+.header-container .logo .nameDark {
+  color: white;
 }
 .header-container .option-container {
   display: flex;
@@ -82,7 +109,7 @@
   align-items: center;
   font-family: Roboto;
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_links {
     flex-direction: column;
     align-items: center;
@@ -111,7 +138,7 @@
     margin-left: 2px;
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_links .navbar_item {
     display: block;
     padding: 2.5rem 1.5rem 0 1.5rem;
@@ -165,12 +192,12 @@
     background-color: rgb(188, 188, 218);
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_linksDark {
     background-color: black;
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .show-nav {
     right: 0;
     width: 50vw;
@@ -188,7 +215,7 @@
 .navbar-container .navbar_burger:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_burger {
     display: block;
     position: fixed;
@@ -196,7 +223,7 @@
     right: 1rem;
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_burger .burgerLight,
   .navbar-container .navbar_burger .burgerLight::before,
   .navbar-container .navbar_burger .burgerLight::after {
@@ -215,7 +242,7 @@
     width: 30px;
   }
 }
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 910px) {
   .navbar-container .navbar_burger .burgerDark,
   .navbar-container .navbar_burger .burgerDark::before,
   .navbar-container .navbar_burger .burgerDark::after {

@@ -26,8 +26,8 @@ export const navbar = [
 /* home data */
 
 export const homeData = {
-  titleFr: "Accueil",
-  titleEn: "Home",
+  titleFr: "ACCUEIL",
+  titleEn: "HOME",
   salutationFr: "Salut ! Je suis",
   salutationEn: "Hello ! I'm am",
   presentationFr: "je suis developpeur front-end junior",
@@ -37,11 +37,12 @@ export const homeData = {
 /* about data */
 
 export const aboutData = {
-  titleFr: "A propos",
-  titleEn: "About",
+  titleFr: "A PROPOS",
+  titleEn: "ABOUT",
   aboutTxtFr:
     "Après de nombreuses années d'exercice dans le secteur de la vente, j’ai pris la décision d’effectuer une reconversion dans le domaine du développement web. J’ai pour cela intégré la formation de la Wild Code School de Mars 2021 à Aout 2021 en développement web et mobile (ReactJS / NodeJS) J'ai obtenu mon titre professionnel développeur web et d'application mobile en Octobre 2022.",
-  aboutTxtEn: "",
+  aboutTxtEn:
+    "After many years of working in the sales sector, I decided to retrain in the field of web development. To do this, I joined the Wild Code School training from March 2021 to August 2021 in web and mobile development (ReactJS / NodeJS). I obtained my professional title as web and mobile application developer in October 2022.",
   skillTitleFr: "Langages et outils que j'utilise :",
   skillTitleEn: " Languages and tools I use:",
   skillImg: ["HTML", "CSS", "JS", "SASS", "REACT", "NODE", "GITHUB"],
@@ -50,15 +51,15 @@ export const aboutData = {
 /* skills data */
 
 export const skillsTitle = {
-  titleFr: "Compétences",
-  titleEn: "Skills",
+  titleFr: "COMPETENCES",
+  titleEn: "SKILLS",
 };
 
 /* contact data */
 
 export const contactData = {
-  titleFr: "Contactez moi",
-  titleEn: "Contact me",
+  titleFr: "CONTACTEZ MOI",
+  titleEn: "CONTACT ME",
   placeholderNameFr: "Votre nom",
   placeholderNameEn: "Your name",
   placeholderEmailFr: "votre email",
@@ -72,13 +73,28 @@ export const contactData = {
 /* Project title */
 
 export const projectTitle = {
-  titleFr: "Projet",
-  titleEn: "Project",
+  titleFr: "PROJET",
+  titleEn: "PROJECT",
 };
 
 /* project card data */
 
 export const project = [
+  {
+    img: "portefolio",
+    titleFr: "Portfolio",
+    titleEn: "Portfolio",
+    descriptionFr:
+      "Portfolio mettant en avant les divers projets réalisés dans le cadre personnel ou en cours de mon stage et de ma formation.",
+    descriptionEn:
+      "Portfolio highlighting the various projects carried out in the personal context or during my internship and training.",
+    github: true,
+    githubLink: "",
+    live: false,
+    liveLink: "",
+    tags: ["REACT", "JS", "CSS", "NODE"],
+  },
+
   {
     img: "NumeroVert",
     titleFr: "Numero Vert",
@@ -119,7 +135,7 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule",
     live: true,
     liveLink: "https://commande.standardenligne.fr/",
-    tags: ["REACT", "JS", "CSS","NODE"],
+    tags: ["REACT", "JS", "CSS", "NODE"],
   },
   {
     img: "MesureBody",

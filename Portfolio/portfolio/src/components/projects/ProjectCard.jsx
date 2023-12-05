@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ProjectCard({
@@ -19,7 +20,10 @@ export default function ProjectCard({
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 2 }}
       className={
         theme === "light"
           ? `projectCard_container projectCardLight`
@@ -56,9 +60,11 @@ export default function ProjectCard({
               ""
             )}
             {liveOk === true ? (
-              <button className={theme === "light" ? "btnLight" : "btnDark"}>
-                <a href={live}>Live</a>
-              </button>
+              <a href={live}>
+                <button className={theme === "light" ? "btnLight" : "btnDark"}>
+                  Live
+                </button>
+              </a>
             ) : (
               ""
             )}
@@ -92,6 +98,6 @@ export default function ProjectCard({
             )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

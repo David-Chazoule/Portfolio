@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import { ThemeContext } from "../../context/ThemeContext";
 import ProjectCard from "./ProjectCard";
 import { project, projectTitle } from "../../Data/data";
@@ -13,11 +14,16 @@ export default function Projects({ translate }) {
           : "project_container project_containerDark"
       }
     >
-      <h1>{translate ? projectTitle.titleFr : projectTitle.titleEn}</h1>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        {translate ? projectTitle.titleFr : projectTitle.titleEn}
+      </motion.h1>
       <div className="project_card_box">
         {project &&
           project.map((elem, key) => (
-            
             <ProjectCard
               key={key}
               img={elem.img}

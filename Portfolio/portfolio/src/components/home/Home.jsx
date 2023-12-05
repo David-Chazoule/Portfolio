@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 import { ThemeContext } from "../../context/ThemeContext";
 import { homeData } from "../../Data/data";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import LinkedinLogo from "./img/LinkedinLogo.png";
 import LinkedinWhite from "./img/LinkedinWhite.png";
 import github from "./img/github.png";
@@ -19,7 +18,12 @@ export default function Home({ translate }) {
         theme === "light" ? " home_container lights" : "home_container darks"
       }`}
     >
-      <div className="presentation">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        className="presentation"
+      >
         <div className="presentation-txt">
           <h1>
             {translate ? homeData.salutationFr : homeData.salutationEn}{" "}
@@ -61,10 +65,15 @@ export default function Home({ translate }) {
             />
           </a>
         </div>
-      </div>
-      <div className="img-dev-box">
-        <img src={devlogo} alt="" />
-      </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        className="img-dev-box"
+      >
+        <img src={devlogo} alt="home-img" />
+      </motion.div>
     </div>
   );
 }

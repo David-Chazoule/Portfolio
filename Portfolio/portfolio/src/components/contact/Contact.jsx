@@ -1,11 +1,11 @@
-import React, { useRef, useContext, useState } from "react";
+import React, { useRef, useContext } from "react";
+import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
 import emailjs from "@emailjs/browser";
 import { contactData } from "../../Data/data";
 import "react-toastify/dist/ReactToastify.css";
 import sendEmailImg from "./img/sendEmail.png";
-
 
 export default function Contact({ translate }) {
   const form = useRef();
@@ -55,8 +55,18 @@ export default function Contact({ translate }) {
           : " contact_containerDark "
       }`}
     >
-      <h1>{translate ? contactData.titleFr : contactData.titleEn}</h1>
-      <div>
+      <motion.h1
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        {translate ? contactData.titleFr : contactData.titleEn}
+      </motion.h1>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
         <div
           className={`contact-card ${
             theme === "light" ? " contact-cardLight" : " contact-cardDark"
@@ -101,7 +111,7 @@ export default function Contact({ translate }) {
         </div>
 
         <img src={sendEmailImg} alt="" />
-      </div>
+      </motion.div>
       <ToastContainer
         position="bottom-center"
         autoClose={3000}

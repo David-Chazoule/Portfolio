@@ -6,7 +6,7 @@
     align-items: center;
     font-family: $fontone;
 
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 910px) {
       flex-direction: column;
       align-items: center;
       position: fixed;
@@ -33,7 +33,7 @@
         margin-left: 2px;
       }
 
-      @media screen and (max-width: 905px) {
+      @media screen and (max-width: 910px) {
         display: block;
         padding: 2.5rem 1.5rem 0 1.5rem;
         font-size: 3.5vw;
@@ -100,13 +100,13 @@
   }
 
   .navbar_linksDark {
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 910px) {
       background-color: black;
     }
   }
 
   .show-nav {
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 910px) {
       right: 0;
       width: 50vw;
       visibility: visible;
@@ -125,7 +125,7 @@
       cursor: pointer;
     }
 
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 910px) {
       display: block;
       position: fixed;
       top: 1rem;
@@ -135,7 +135,7 @@
     .burgerLight,
     .burgerLight::before,
     .burgerLight::after {
-      @media screen and (max-width: 905px) {
+      @media screen and (max-width: 910px) {
         display: block;
         width: 40px;
         height: 3px;
@@ -152,7 +152,7 @@
     .burgerDark,
     .burgerDark::before,
     .burgerDark::after {
-      @media screen and (max-width: 905px) {
+      @media screen and (max-width: 910px) {
         display: block;
         width: 40px;
         height: 3px;
