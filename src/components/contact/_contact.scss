@@ -92,6 +92,10 @@
             margin: 10px;
           }
 
+          @media screen and (max-width: 510px) {
+            width: 80%;
+          }
+
           &::placeholder {
             color: black;
             opacity: 0.6;
@@ -115,6 +119,11 @@
           @media screen and (max-width: 910px) {
             width: 90%;
             height: 16vh;
+          }
+
+          @media screen and (max-width: 510px) {
+            width: 80%;
+            height: 14vh;
           }
         }
 

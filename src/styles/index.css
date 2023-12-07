@@ -1027,6 +1027,11 @@
     margin: 10px;
   }
 }
+@media screen and (max-width: 510px) {
+  .contact_container div .contact-card form input {
+    width: 80%;
+  }
+}
 .contact_container div .contact-card form input::-moz-placeholder {
   color: black;
   opacity: 0.6;
@@ -1056,6 +1061,12 @@
   .contact_container div .contact-card form textarea {
     width: 90%;
     height: 16vh;
+  }
+}
+@media screen and (max-width: 510px) {
+  .contact_container div .contact-card form textarea {
+    width: 80%;
+    height: 14vh;
   }
 }
 .contact_container div .contact-card form textarea::-moz-placeholder {
