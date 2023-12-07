@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../context/ThemeContext";
@@ -15,26 +16,28 @@ export default function Header({ translate, setTranslate }) {
   };
   return (
     <div className={`header-container ${theme}`}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        className="logo"
-      >
-        {theme === "light" ? (
-          <img className="logoImg" src={logofolio} alt="logo" />
-        ) : (
-          <img className="logoImg" src={logofolioDark} alt="logo" />
-        )}
-
-        <span
-          className={
-            theme === "light" ? "name-logo nameLight" : "name-logo nameDark"
-          }
+      <Link to={"/Portfolio"}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          className="logo"
         >
-          DAVID.C
-        </span>
-      </motion.div>
+          {theme === "light" ? (
+            <img className="logoImg" src={logofolio} alt="logo" />
+          ) : (
+            <img className="logoImg" src={logofolioDark} alt="logo" />
+          )}
+
+          <span
+            className={
+              theme === "light" ? "name-logo nameLight" : "name-logo nameDark"
+            }
+          >
+            DAVID.C
+          </span>
+        </motion.div>
+      </Link>
 
       <motion.div
         initial={{ opacity: 0 }}

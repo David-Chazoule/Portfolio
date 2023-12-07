@@ -55,7 +55,7 @@ export default function Contact({ translate }) {
           : " contact_containerDark "
       }`}
     >
-      <motion.h1
+      <motion.h1 className="title-contact"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}

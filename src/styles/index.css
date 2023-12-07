@@ -490,10 +490,10 @@
 .about_container h1 {
   margin-bottom: 6vh;
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 510px) {
   .about_container h1 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 .about_container .about-box {
@@ -720,6 +720,12 @@
   margin-bottom: 5vh;
   font-weight: bold;
 }
+@media screen and (max-width: 510px) {
+  .project_container h1 {
+    font-size: 26px;
+    margin-bottom: 1vh;
+  }
+}
 .project_container .project_card_box {
   display: flex;
   width: 100%;
@@ -853,7 +859,7 @@
 .projectCard_container .card .description-card .project-link button {
   font-family: montserrat;
   width: 140px;
-  height: 50px;
+  height: 53px;
   border: none;
   outline: none;
   background: #111;
@@ -928,19 +934,19 @@
   min-height: 100vh;
   font-family: montserrat;
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 550px) {
   .contact_container {
-    justify-content: center;
     align-items: center;
-    padding: 5rem 0 0 0;
+    padding: 6rem 0.5rem 0.5rem;
   }
 }
-.contact_container h1 {
+.contact_container .title-contact {
   margin-bottom: 5vh;
   font-weight: bold;
 }
-@media screen and (max-width: 910px) {
-  .contact_container h1 {
+@media screen and (max-width: 510px) {
+  .contact_container .title-contact {
+    font-size: 26px;
     margin-bottom: 0;
   }
 }

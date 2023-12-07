@@ -152,7 +152,7 @@ export const project = [
     tags: ["REACT", "JS", "SASS", "NODE"],
   },
   {
-    img: "mars",
+    img: "MarsWebSite",
     titleFr: "Mars Ma Zon",
     titleEn: "Mars Ma Zon",
     descriptionFr:

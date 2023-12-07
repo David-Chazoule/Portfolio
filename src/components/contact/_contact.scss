@@ -8,17 +8,17 @@
   min-height: 100vh;
   font-family: $fonttwo;
 
-  @media screen and (max-width: 910px) {
-    justify-content: center;
+  @media screen and (max-width: 550px) {
     align-items: center;
-    padding: 5rem 0 0 0;
+    padding: 6rem 0.5rem 0.5rem;
   }
 
-  h1 {
+  .title-contact {
     margin-bottom: 5vh;
     font-weight: bold;
 
-    @media screen and (max-width: 910px) {
+    @media screen and (max-width: 510px) {
+      font-size: 26px;
       margin-bottom: 0;
     }
   }
