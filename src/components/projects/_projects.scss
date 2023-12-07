@@ -1,0 +1,42 @@
+.project_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1rem 1rem;
+  font-family: $fonttwo;
+
+  @media screen and (max-width: 550px) {
+    padding: 6rem 0;
+  }
+
+  h1 {
+    margin-bottom: 5vh;
+    font-weight: bold;
+  }
+
+  .project_card_box {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width: 550px) {
+      margin: 10px 0;
+    }
+  }
+}
+
+.project_containerLight {
+  background-color: rgb(224, 224, 240);
+  color: #414d97;
+}
+
+.project_containerDark {
+  @include backgroundDark;
+  color: white;
+}

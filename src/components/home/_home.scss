@@ -1,0 +1,168 @@
+.home_container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: $fonttwo;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    padding: 1rem 1rem 1rem;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50vh;
+
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    .presentation-txt {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h1 {
+        font-size: 50px;
+        @media screen and (max-width: 1300px) {
+          font-size: 40px;
+        }
+
+        @media screen and (max-width: 900px) {
+          font-size: 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+          font-size: 28px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 26px;
+        }
+
+        span {
+          font-weight: 800;
+        }
+
+        .nameLight {
+          color: #414d97;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        .nameDark {
+          color: rgb(101, 33, 118);
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      h2 {
+        @media screen and (max-width: 1200px) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 20px;
+        }
+      }
+
+      .bar-separate {
+        width: 300px;
+        height: 6px;
+        margin: 80px 0 40px 0;
+        border-radius: 50%;
+        filter: drop-shadow(7px 7px 7px #666666);
+        -webkit-filter: drop-shadow(7px 7px 7px #666666);
+
+        @media screen and (max-width: 910px) {
+          margin: 30px 0;
+          filter: none;
+          -webkit-filter: none;
+        }
+      }
+
+      .bar-light {
+        background-color: #414d97;
+      }
+
+      .bar-dark {
+        background-color: rgb(101, 33, 118);
+      }
+    }
+
+    .contact-box {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 80px;
+        margin: 0 20px 0 20px;
+
+        @media screen and (max-width: 1150px) {
+          width: 50px;
+        }
+
+        @media screen and (max-width: 1150px) {
+          width: 60px;
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .img-dev-box {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+
+    @media screen and (max-width: 600px) {
+      height: auto;
+      width: 100%;
+    }
+
+    img {
+      width: 80%;
+
+      @media screen and (max-width: 600px) {
+        margin-top: 6vh;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.darks {
+  color: white;
+  @include backgroundDark;
+}
+
+.lights {
+  background-color: rgb(224, 224, 240);
+  color: black;
+}
