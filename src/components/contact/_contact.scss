@@ -43,6 +43,10 @@
       @media screen and (max-width: 910px) {
         width: 70%;
       }
+
+      @media screen and (max-width: 510px) {
+        width: 50%;
+      }
     }
     .contact-card {
       display: flex;
@@ -94,6 +98,7 @@
 
           @media screen and (max-width: 510px) {
             width: 80%;
+            margin: 6px;
           }
 
           &::placeholder {
