@@ -142,9 +142,9 @@ export const project = [
     titleFr: "Mesure Body",
     titleEn: "Mesure Body",
     descriptionFr:
-      "Projet personnel d’une application web « from stretch » permettant de calculer votre indice de masse corporelle et de calculer votre besoin calorique.",
+      "Projet personnel d’une application web « from scratch » permettant de calculer votre indice de masse corporelle et de calculer votre besoin calorique.",
     descriptionEn:
-      "Personal project of a web application “from stretch” allowing you to calculate your body mass index and calculate your caloric needs.",
+      "Personal project of a web application “ from scratch ” allowing you to calculate your body mass index and calculate your caloric needs.",
     github: true,
     githubLink: "https://github.com/David-Chazoule/BodyMeasure",
     live: true,
