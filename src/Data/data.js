@@ -96,6 +96,38 @@ export const project = [
   },
 
   {
+    img: "MesureBody",
+    titleFr: "Mesure Body",
+    titleEn: "Mesure Body",
+    descriptionFr:
+      "Projet personnel d’une application web « from scratch » permettant de calculer votre indice de masse corporelle et de calculer votre besoin calorique.",
+    descriptionEn:
+      "Personal project of a web application “ from scratch ” allowing you to calculate your body mass index and calculate your caloric needs.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/BodyMeasure",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/BodyMeasure/",
+    tags: ["REACT", "JS", "SASS", "NODE"],
+  },
+
+  {
+    img: "technologeek",
+    titleFr: "Technologeek",
+    titleEn: "Technologeek",
+    descriptionFr:
+      "Projet d’application web d'e-commerce réalisé pour l'obtention du titre professionnel « développeur web et d'application mobile » Réalisation du projet  « from stretch » aussi bien du coté front-end que back-end.",
+    descriptionEn:
+      "E-commerce web application project carried out to obtain the professional title “web and mobile application developer” Realization of the “from stretch” project on both the front-end and back-end sides.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/e-shop-front/tree/dev",
+    githubLinkTwo: "https://github.com/David-Chazoule/e-shop-back",
+    git: true,
+    live: false,
+    liveLink: "",
+    tags: ["REACT", "JS", "SASS", "NODE"],
+  },
+
+  {
     img: "NumeroVert",
     titleFr: "Numero Vert",
     titleEn: "Green number",
@@ -137,20 +169,7 @@ export const project = [
     liveLink: "https://commande.standardenligne.fr/",
     tags: ["REACT", "JS", "CSS", "NODE"],
   },
-  {
-    img: "MesureBody",
-    titleFr: "Mesure Body",
-    titleEn: "Mesure Body",
-    descriptionFr:
-      "Projet personnel d’une application web « from scratch » permettant de calculer votre indice de masse corporelle et de calculer votre besoin calorique.",
-    descriptionEn:
-      "Personal project of a web application “ from scratch ” allowing you to calculate your body mass index and calculate your caloric needs.",
-    github: true,
-    githubLink: "https://github.com/David-Chazoule/BodyMeasure",
-    live: true,
-    liveLink: "https://david-chazoule.github.io/BodyMeasure/",
-    tags: ["REACT", "JS", "SASS", "NODE"],
-  },
+
   {
     img: "MarsWebSite",
     titleFr: "Mars Ma Zon",
@@ -164,21 +183,5 @@ export const project = [
     live: true,
     liveLink: "https://pelegrand.github.io/earth_at_hack/",
     tags: ["REACT", "JS", "CSS", "NODE"],
-  },
-  {
-    img: "technologeek",
-    titleFr: "Technologeek",
-    titleEn: "Technologeek",
-    descriptionFr:
-      "Projet d’application web d'e-commerce réalisé pour l'obtention du titre professionnel « développeur web et d'application mobile » Réalisation du projet  « from stretch » aussi bien du coté front-end que back-end.",
-    descriptionEn:
-      "E-commerce web application project carried out to obtain the professional title “web and mobile application developer” Realization of the “from stretch” project on both the front-end and back-end sides.",
-    github: true,
-    githubLink: "https://github.com/David-Chazoule/e-shop-front/tree/dev",
-    githubLinkTwo: "https://github.com/David-Chazoule/e-shop-back",
-    git: true,
-    live: false,
-    liveLink: "",
-    tags: ["REACT", "JS", "SASS", "NODE"],
   },
 ];
