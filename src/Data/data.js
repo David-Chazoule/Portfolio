@@ -92,7 +92,7 @@ export const project = [
     githubLink: "",
     live: false,
     liveLink: "",
-    tags: ["REACT", "JS", "CSS", "NODE"],
+    tags: ["REACT", "JS", "SASS", "NODE"],
   },
 
   {
