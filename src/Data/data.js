@@ -80,6 +80,22 @@ export const projectTitle = {
 /* project card data */
 
 export const project = [
+
+
+  {
+    img: "horae",
+    titleFr: "Horae",
+    titleEn: "Horae",
+    descriptionFr:
+      "Application web de prévision météorologique réalisé à l'aide de l'api OpenWeather. ",
+    descriptionEn:
+      "Weather forecast web application created using the OpenWeather API.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/Horae",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/Horae/",
+    tags: ["REACT", "TS", "JS", "CSS", "NODE"],
+  },
   {
     img: "portefolio",
     titleFr: "Portfolio",
@@ -88,7 +104,7 @@ export const project = [
       "Portfolio mettant en avant les divers projets réalisés dans le cadre personnel ou en cours de mon stage et de ma formation.",
     descriptionEn:
       "Portfolio highlighting the various projects carried out in the personal context or during my internship and training.",
-    github: true,
+    github: false,
     githubLink: "",
     live: false,
     liveLink: "",
