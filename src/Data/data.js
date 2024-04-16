@@ -94,7 +94,7 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/Horae",
     live: true,
     liveLink: "https://david-chazoule.github.io/Horae/",
-    tags: ["REACT", "TS", "JS", "CSS", "NODE"],
+    tags: ["REACT", "TS", "JS", "SASS", "NODE"],
   },
   {
     img: "portefolio",
@@ -104,7 +104,7 @@ export const project = [
       "Portfolio mettant en avant les divers projets réalisés dans le cadre personnel ou en cours de mon stage et de ma formation.",
     descriptionEn:
       "Portfolio highlighting the various projects carried out in the personal context or during my internship and training.",
-    github: false,
+    github: true,
     githubLink: "",
     live: false,
     liveLink: "",
