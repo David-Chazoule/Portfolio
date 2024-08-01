@@ -25,7 +25,7 @@ To set up and run the application locally, follow these steps:
 
 Here's an overview of the project structure:
 
-- **`src/`**: Contains the source code for the application.
+  - **`src/`**: Contains the source code for the application.
   - **`components/`**: Reusable React components.
   - **`Context/`**: For handling light and dark mode.
   - **`styles/`**: Sass files for styling.
