@@ -1,4 +1,4 @@
-<p align="center"># Portfolio </p>
+<p align="center"> # Portfolio </p>
 <p align="center">
 <img src="https://media.discordapp.net/attachments/1268608877755236446/1268615900227960912/portfolio1.PNG?ex=66ad1220&is=66abc0a0&hm=f0fb4a817320cda9a190e9570ce9506b75e9a97365fb1d3147f85cc3cb8024be&=&format=webp&quality=lossless&width=1415&height=676" alt="home page screen" style="width:600px; height:auto;">
 </p>
