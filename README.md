@@ -3,7 +3,8 @@
   
 
 
-<img src="https://private-user-images.githubusercontent.com/79724862/367919007-58a40e01-3bdc-46e2-80fd-62ecadfd650b.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY1MTg0OTYsIm5iZiI6MTcyNjUxODE5NiwicGF0aCI6Ii83OTcyNDg2Mi8zNjc5MTkwMDctNThhNDBlMDEtM2JkYy00NmUyLTgwZmQtNjJlY2FkZmQ2NTBiLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE2VDIwMjMxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3ZTViNThmMGU0NzVkMjhmYjdlZTI5N2FmNjM5YjBkZTE1ZGFkNWYyNjc2YTQzNjkwODRhYTAwYjRkZWIwZmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.--A_tTm32ZsBhuiLcLCM-PpaiteIstrhzCGT0_44ExA" alt="home page screen" style="width:600px; height:auto;">
+<img src="https://i.imgur.com/f09KVXL.png" alt="portfolio home screen" style="width:600px; height:auto;" >
+<img src="https://i.imgur.com/p47M3XT.png" alt="projects portfolio screen" style="width:400px; height:auto;"><img src="https://i.imgur.com/Bh7GsPT.png" alt="about portfolio screen" style="width:400px; height:auto;">
 
 
 
