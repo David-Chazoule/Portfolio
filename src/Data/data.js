@@ -80,8 +80,6 @@ export const projectTitle = {
 /* project card data */
 
 export const project = [
-
-
   {
     img: "horae",
     titleFr: "Horae",
@@ -123,7 +121,83 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/BodyMeasure",
     live: true,
     liveLink: "https://david-chazoule.github.io/BodyMeasure/",
-    tags: ["REACT", "JS", "SASS", "NODE"],
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
+    img: "mortgage_1",
+    titleFr: "Calculateur de remboursement",
+    titleEn: "Montgage repayment calculator",
+    descriptionFr:
+      "Ce projet calcule les remboursements hypothécaires en fonction du montant emprunté, du taux d'intérêt et de la durée. Il aide à visualiser le coût total sur une période donnée. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project calculates mortgage repayments based on the loan amount, interest rate, and duration. It helps visualize the total cost over a given period. It's a Frontend Mentor challenge to improve web development skills",
+    github: true,
+    githubLink:
+      "https://github.com/David-Chazoule/Montgage-repayment-calculator-",
+    live: true,
+    liveLink:
+      "https://david-chazoule.github.io/Montgage-repayment-calculator-/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
+    img: "ageCalculator_1",
+    titleFr: "Calculateur d'âge",
+    titleEn: "Age calculator",
+    descriptionFr:
+      "Ce projet permet de calculer l'âge d'une personne en fonction de sa date de naissance, offrant une interface simple et interactive.Ce projet est un défi proposé par Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project calculates a person's age based on their birthdate, providing a simple and interactive interface. This project is a challenge offered by Frontend Mentor to improve one's web development skills",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/age-calculator",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/age-calculator/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
+    img: "tip_1",
+    titleFr: "Calculateur de pourboire",
+    titleEn: "Tip calculator",
+    descriptionFr:
+      "Cette application calcule le pourboire en fonction du montant de l'addition et du pourcentage souhaité, offrant une répartition claire du montant à payer. Ce projet est un défi proposé par Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This app calculates the tip based on the bill amount and the desired percentage, offering a clear breakdown of the total payment. This project is a challenge offered by Frontend Mentor to improve one's web development skills",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/tip-calculator",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/tip-calculator/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+  {
+    img: "card_1",
+    titleFr: "Carte interactive",
+    titleEn: "Interactive card detail",
+    descriptionFr:
+      "Ce projet permet aux utilisateurs d'entrer leurs informations de carte de crédit, avec une interface visuelle interactive et dynamique. Ce projet est un défi proposé par Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project allows users to input their credit card details with a dynamic, interactive visual interface. This project is a challenge offered by Frontend Mentor to improve one's web development skills",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/interactive-card-detail",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/interactive-card-detail/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
+    img: "password_1",
+    titleFr: "Générateur de mot de passe",
+    titleEn: "Password Generator",
+    descriptionFr:
+      "Ce générateur crée des mots de passe sécurisés en fonction des critères choisis, tels que la longueur et le type de caractères.",
+    descriptionEn:
+      "This generator creates secure passwords based on selected criteria, such as length and character types.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/PasswordGenerator",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/PasswordGenerator/",
+    tags: ["REACT", "JS", "SASS"],
   },
 
   {

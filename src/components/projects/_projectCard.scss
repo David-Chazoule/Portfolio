@@ -7,11 +7,11 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 10px;
   width: 450px;
-  height: fit-content;
+  height: auto;
   margin: 10px;
   font-family: $fonttwo;
   letter-spacing: 1px;
-  line-height: 1.6em;
+  line-height: 1.4em;
 
   @media screen and (max-width: 550px) {
     width: 100%;
@@ -42,6 +42,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      height: auto;
       margin: 2px;
 
       .title-project {
