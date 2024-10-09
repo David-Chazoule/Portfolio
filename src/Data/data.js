@@ -81,6 +81,21 @@ export const projectTitle = {
 
 export const project = [
   {
+    img: "Todo",
+    titleFr: "Todo App",
+    titleEn: "Todo App",
+    descriptionFr:
+      "Ce projet est une application de liste à faire. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project is a to-do list app. It's a Frontend Mentor challenge to improve your web development skills.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/todo-app",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/todo-app/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
     img: "horae",
     titleFr: "Horae",
     titleEn: "Horae",
@@ -121,6 +136,21 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/BodyMeasure",
     live: true,
     liveLink: "https://david-chazoule.github.io/BodyMeasure/",
+    tags: ["REACT", "JS", "SASS"],
+  },
+
+  {
+    img: "filterJob",
+    titleFr: "Job listing",
+    titleEn: "Job listing",
+    descriptionFr:
+      "Application pour filtrer des emplois en fonction de la catégories sélectionnées. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "Application to filter jobs based on selected categories. It's a Frontend Mentor challenge to improve your web development skills.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/job-listings",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/job-listings/",
     tags: ["REACT", "JS", "SASS"],
   },
 
