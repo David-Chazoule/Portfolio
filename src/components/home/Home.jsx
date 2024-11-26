@@ -56,8 +56,8 @@ export default function Home({ translate }) {
               alt="Github-logo"
               title="Github"
             />
-          </a>    
-          <a href="https://drive.google.com/file/d/1RGPp75XM2OQD4CuoTjZ20IOhUu0blWcz/view">
+          </a>
+          <a href="https://drive.google.com/file/d/18g4MJvlj8ACRt6kuoAOAc7H7yr89CrbI/view">
             <img
               src={theme === "light" ? CV : cvwhite}
               alt="cv-logo"
