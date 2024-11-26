@@ -57,7 +57,7 @@ export default function Home({ translate }) {
               title="Github"
             />
           </a>
-          <a href="https://drive.google.com/file/d/18g4MJvlj8ACRt6kuoAOAc7H7yr89CrbI/view">
+          <a href="/CV David Chazoule.pdf" download="/CV David Chazoule.pdf">
             <img
               src={theme === "light" ? CV : cvwhite}
               alt="cv-logo"
