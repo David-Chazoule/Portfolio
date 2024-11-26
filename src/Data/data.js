@@ -81,6 +81,21 @@ export const projectTitle = {
 
 export const project = [
   {
+
+    img: "SpaceTourism",
+    titleFr: "Space Tourism",
+    titleEn: "Space Tourism",
+    descriptionFr:
+      "Ce projet est un site web de tourisme spacial de plusieurs pages. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project is a multi-page space tourism website. It is a Frontend Mentor challenge to improve your web development skills.",
+    github: true,
+    githubLink: "https://david-chazoule.github.io/Space-Tourism/#/Home",
+    live: true,
+    liveLink: "https://github.com/David-Chazoule/Space-Tourism",
+    tags: ["REACT", "TS", "JS",  "SASS"],
+  },
+  {
     img: "Todo",
     titleFr: "Todo App",
     titleEn: "Todo App",
