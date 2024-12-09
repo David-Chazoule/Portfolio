@@ -81,6 +81,21 @@ export const projectTitle = {
 
 export const project = [
   {
+    img: "crowdfunding",
+    titleFr: "Page produit de financement participatif",
+    titleEn: "Crowdfunding product page",
+    descriptionFr:
+      "Ce projet est une page produit de financement participatif. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
+    descriptionEn:
+      "This project is a crowdfunding product page. It is a Frontend Mentor challenge to improve your web development skills.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/Crowdfunding-product",
+    live: true,
+    liveLink: "https://david-chazoule.github.io/Crowdfunding-product/",
+    tags: ["REACT", "TS", "JS", "SASS"],
+  },
+
+  {
     img: "ProductList",
     titleFr: "Liste des produits avec panier",
     titleEn: "Space Tourism",

@@ -57,7 +57,7 @@ export default function Home({ translate }) {
               title="Github"
             />
           </a>
-          <a href={`${process.env.PUBLIC_URL}/CV David Chazoule.pdf`} download="CV DavidChazoule.pdf">
+          <a href={`${process.env.PUBLIC_URL}/CVDavidChazoule.pdf`} download="CV DavidChazoule.pdf">
             <img
               src={theme === "light" ? CV : cvwhite}
               alt="cv-logo"
