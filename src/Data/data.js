@@ -281,7 +281,7 @@ export const project = [
     descriptionFr:
       "Projet d’application web d'e-commerce réalisé pour l'obtention du titre professionnel « développeur web et d'application mobile » Réalisation du projet  « from stretch » aussi bien du coté front-end que back-end.",
     descriptionEn:
-      "E-commerce web application project carried out to obtain the professional title “web and mobile application developer” Realization of the “from stretch” project on both the front-end and back-end sides.",
+      "E-commerce web application project carried out to obtain the professional title “web and mobile application developer” Realization of the “from stratch” project on both the front-end and back-end sides.",
     github: true,
     githubLink: "https://github.com/David-Chazoule/e-shop-front/tree/dev",
     githubLinkTwo: "https://github.com/David-Chazoule/e-shop-back",
