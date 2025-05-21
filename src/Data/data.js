@@ -81,8 +81,23 @@ export const projectTitle = {
 
 export const project = [
   {
+    img: "listUp",
+    titleFr: "List-up",
+    titleEn: "List-up",
+    descriptionFr:
+      "List-up est une application web de gestion de tâches en NEXT.js & Prisma. Ajouter, modifier, supprimer, valider et trier des tâches selon ces critères pour une meilleure organisation du quotidien.",
+    descriptionEn:
+      "List-up is a web-based task management application in NEXT.JS & Prisma. It allows you to add, edit, delete, validate, and sort tasks based on various criteria for better organization of your daily life.",
+    github: true,
+    githubLink: "https://github.com/David-Chazoule/listup",
+    live: false,
+    liveLink: "https://david-chazoule.github.io/Crowdfunding-product/",
+    tags: ["NEXT", "TS", "PRISMA", "SASS"],
+  },
+
+  {
     img: "crowdfunding",
-    titleFr: "Page produit de financement participatif",
+    titleFr: "Page de financement participatif",
     titleEn: "Crowdfunding product page",
     descriptionFr:
       "Ce projet est une page produit de financement participatif. C'est un défi Frontend Mentor pour améliorer ses compétences en développement web.",
@@ -92,7 +107,7 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/Crowdfunding-product",
     live: true,
     liveLink: "https://david-chazoule.github.io/Crowdfunding-product/",
-    tags: ["REACT", "TS", "JS", "SASS"],
+    tags: ["REACT", "TS", "SASS"],
   },
 
   {
@@ -107,7 +122,7 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/Product-list",
     live: true,
     liveLink: "https://david-chazoule.github.io/Product-list/",
-    tags: ["REACT", "TS", "JS", "SASS"],
+    tags: ["REACT", "TS", "SASS"],
   },
 
   {
@@ -122,7 +137,7 @@ export const project = [
     githubLink: "https://github.com/David-Chazoule/Space-Tourism",
     live: true,
     liveLink: "https://david-chazoule.github.io/Space-Tourism/#/Home",
-    tags: ["REACT", "TS", "JS", "SASS"],
+    tags: ["REACT", "TS", "SASS"],
   },
   {
     img: "Todo",

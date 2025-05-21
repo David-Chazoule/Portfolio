@@ -86,6 +86,7 @@ export default function ProjectCard({
                   src={require("../about/imgSkillsLight/" + elem + ".png")}
                   alt={elem}
                   title={elem}
+                  className={`${elem === "NEXT" ? "img-next" : ""}`}
                 />
               ) : (
                 <img
